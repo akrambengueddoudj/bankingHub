@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- ايقونات قوقل فونتس  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>BankingHub | Electronic Banking</title>
+  </head>
+  <body>
+    <div class="nav">
+      <!-- اللوغو -->
+      <a class="logo" href="#">
+        <img src="./pictures/images/logo.png" width="100px" alt="" />
+      </a>
+
+      <!-- ايقونة الاقسام في الريسبونسيف -->
+      <div class="navbar-toggler" type="button" id="bar">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </div>
+
+      <!-- قائمة المحتويات -->
+      <div class="menu-bar" id="navbar">
+        <ul class="menu-items m-0">
+          <li><a class="menu-bar-item" href="./index.html">الرئيسية</a></li>
+          <li>
+            <a class="menu-bar-item" href="./index.html#services">خدماتنا</a>
+          </li>
+          <li>
+            <div class="dropdown-center">
+              <div
+                class="menu-bar-item"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="nav-link-text">روابط هامة</span>
+              </div>
+              <ul class="dropdown-menu mt-2">
+                <div class="d-flex gap-3">
+                  <div>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bank-of-algeria.dz/ar/%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                        >البنك المركزي الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.mf.gov.dz/index.php/ar/"
+                        >وزارة المالية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.ons.dz/"
+                        >الديوان الوطني للإحصائيات</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://arableasing-dz.com/"
+                        >الشركة العربية للإيجار المالي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.maghrebleasingalgerie.com/"
+                        >المغاربية للإيجار المـــالي - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://snl.dz/ar/accueil-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9/"
+                        >الشركة الوطنية للإيجار المالي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.ijarleasingalgerie.dz/"
+                        >إيجار الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.abef-dz.org/abef/index.php"
+                        >جمعية البنوك والمؤسسات المالية</a
+                      >
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <span class="dropdown-header fw-bold"
+                        >البنوك التجارية</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bea.dz/"
+                        >بنك الجزائر الخارجي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bna.dz/ar/%d8%a7%d9%84%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                        >البنك الوطني الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://badrbanque.dz/ar/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/"
+                        >بنك الفلاحة والتنمية الريفية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bdl.dz/arabe/index.html"
+                        >بنك التنمية المحلية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.cpa-bank.dz/index.php/ar/"
+                        >القرض الشعبي الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.cnepbanque.dz/web/"
+                        >الصندوق الوطني للتوفير والاحتياط</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.albaraka-bank.dz/?lang=ar"
+                        >بنك البركة الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bank-abc.com/ar/CountrySites/Algeria/"
+                        >المؤسسة المصرفية العربية - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://ebanking.algerie.natixis.com/ebanking/index.ebk"
+                        >بنك NATIXIS - فرع الجزائر</a
+                      >
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://societegenerale.dz/fr/"
+                        >بنك SOCIETE GENERALE - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.citigroup.com/global/about-us/global-presence/algeria"
+                        >بنك CITIBANK N.A - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.arabbank.dz/"
+                        >بنك ARAB BANK PLC - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bnpparibas.dz/"
+                        >بنك BNP PARIBAS - فرع الجزاير</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.trustbank.dz/"
+                        >بنك TRUST BANK - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.agb.dz/"
+                        >بنك الخليج - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.housingbankdz.com/index.php/fr/"
+                        >بنك الإسكان للتجارة والتمويل - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.fransabank.dz/ar/home-arabic/"
+                        >بنك FRANSABANK فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.alsalamalgeria.com/"
+                        >بنك السلام - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.business.algeria.hsbc.com/"
+                        >بنك H.S.B.C. - فرع الجزائر</a
+                      >
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="menu-bar-item" href="./statistics.html">احصائيات</a>
+          </li>
+          <li><a class="menu-bar-item" href="./about.html">حول الشركة</a></li>
+        </ul>
+      </div>
+
+      <!-- ايقونات السوشيل ميديا  -->
+      <div class="navbar-social">
+        <span>تابعنا</span>
+        <ul class="m-0">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container pb-4 pt-5">
+      <div class="d-flex flex-column gap-3 p-3 rounded-4 text-black">
+        <div class="d-flex flex-column gap-2">
+          <ol type="1">
+            <li class="fs-3 fw-bold">مفهوم الصيرفة الالكترونية</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              هي كافة الأنشطة والعمليات التي يتم عقدها أو تنفيذها أو الترويج لها
+              بواسطة الوسائل الإلكترونية مثل الهاتف والحاسوب وأجهزة الصراف الآلي
+              والإنترنت والتلفزيون الرقمي وغيرها ،وذلك من قبل المصارف أو
+              المؤسسات التي تتعاطى التحويلات النقدية إلكترونيا .
+            </p>
+            <li class="fs-3 fw-bold">أهداف الصيرفة الالكترونية</li>
+            <ul>
+              <li class="fs-5">
+                تعزيز المصارف لمكانتها وحصتها في السوق المصرفي .
+              </li>
+              <li class="fs-5">خفض التكاليف .</li>
+              <li class="fs-5">
+                وسيلة للمصارف لتوسيع نشاطها داخل وخارج الحدود الوطنية .
+              </li>
+              <li class="fs-5">
+                إتاحة المعلومات عن الخدمات التي تؤديها البنوك دون تقديم خدمات
+                مصرفية على الشبكة
+              </li>
+              <li class="fs-5">
+                حصول العملاء على الخدمات المصرفية وغير المصرفية في أي وقت وفي أي
+                مكان
+              </li>
+            </ul>
+            <li class="fs-3 fw-bold">خصائص الصيرفة الالكترونية</li>
+            <ul>
+              <li class="fs-5">
+                أنها خدمات تتم عن بعد بدون اتصال مباشر بين أطراف الخدمة المصرفية
+                .
+              </li>
+              <li class="fs-5">
+                أنها خدمات تقوم على التعاقد بدون مستندات ورقية وهذا ما طرح عدد
+                من المسائل القانونية المتعلقة بأداة الاثبات .
+              </li>
+              <li class="fs-5">
+                أنها خدمات عبر الحدود ولا تعرف قيودا جغرافية .
+              </li>
+            </ul>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              ويمكن للمصرف الذي يرغب في ممارسة الصيرفة الالكترونية أن يحصل على
+              ترخيص من السلطات المختصة بعد التأكد من الأمور التالية :
+            </p>
+            <ul>
+              <li class="fs-5">
+                السياسة العامة في تأدية الخدمات المصرفية والمالية والالكترونية .
+              </li>
+              <li class="fs-5">الخيارات التقنية والسياسة الرقابية .</li>
+              <li class="fs-5">المشاكل القانونية المتعلقة بتقديم هذه الخدمة</li>
+            </ul>
+            <li class="fs-3 fw-bold">مزايا الصيرفة الالكترونية</li>
+            <ol>
+              <li class="fs-5">المزايا المحققة للبنك:</li>
+              <ul>
+                <li class="fs-5 fw-bold">تخفيف أعباء البنك:</li>
+                <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                  كتخفيف أعباء فتح فروع في أماكن مختلفة داخل وخارج الدولة .
+                </p>
+                <li class="fs-5 fw-bold">حرية الاختيار:</li>
+                <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                  حيث تزود البنوك الزبائن بالمعلومات الكاملة عن المنتجات
+                  والخدمات التي تقدمها، وكذلك بالأسعار والخيارات .
+                </p>
+                <li class="fs-5 fw-bold">تلقائية التعامل :</li>
+                <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                  فلا حاجة لوجود علاقة عمل بين البنك والعميل عند اعتماد أساليب
+                  الصيرفة الالكترونية .
+                </p>
+                <li class="fs-5 fw-bold">التكامل مع العميل في الانترنت:</li>
+                <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                  بتوفير خدمة التوصيل إلى المنازل كونه سوق متكامل .
+                </p>
+                <li class="fs-5 fw-bold">انخفاض تكلفة أداء الخدمة المصرفية:</li>
+                <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                  باستخدام الوسائل الالكترونية
+                </p>
+                <li class="fs-5 fw-bold">
+                  تعدد وسائل الدخول إلى الحسابات المصرفية :
+                </li>
+                <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                  كاستخدم الهاتف أو الموبايل
+                </p>
+              </ul>
+              <li class="fs-5">المزايا المحققة للعميل:</li>
+              <ul>
+                <li class="fs-5">
+                  يفضل الكثير من العملاء إتمام عملياتهم المصرفية عن طريق أساليب
+                  الصيرفة الالكترونية من المنزل أو من المكتب بدلا من عناء التنقل
+                  والانتظار في الطابور .
+                </li>
+                <li class="fs-5">
+                  تحقيق سرية الحسابات التي يرغب فيها عدد كبير من العملاء لتسوية
+                  أنشطتهم المالية والمصرفية .
+                </li>
+                <li class="fs-5">
+                  السهولة وسرعة الاستخدام والأمان بدل حمل النقود الورقية وتفادي
+                  خطر السرقة والضياع .
+                </li>
+                <li class="fs-5">
+                  توفير باقات من الخدمات متميزة لرجال الأعمال والعملاء ذوي
+                  المستوى المرموق .
+                </li>
+              </ul>
+            </ol>
+            <li class="fs-3 fw-bold">عيوب الصيرفة الالكترونية</li>
+            <ul>
+              <li class="fs-5">
+                عدم وجود الوعي والمعرفة الكافية لدى عملاء البنك يؤثر على علاقتهم
+                بالبنك وتعاملاتهم المصرفية الالكترونية .
+              </li>
+              <li class="fs-5">
+                عدم وجود تشريعات حكومية كافية وواضحة لتنظيم ومراقبة هذه الأعمال
+                وحماية مصالح العملاء وضمان حرية المعاملات .
+              </li>
+              <li class="fs-5">
+                وجود بعض العيوب في بعض الأماكن واستحالة وصول الخدمة المصرفية
+                إليها كبطئ خطوط الانترنت وقلة انتشارها .
+              </li>
+              <li class="fs-5">
+                عدم وجود شبكات معلومات سريعة ومتطورة ومشفرة تستطيع نقل المعلومات
+                بالسرعة الكافية
+              </li>
+            </ul>
+            <li class="fs-3 fw-bold">قنوات الصيرفة الالكترونية</li>
+            <ul>
+              <li class="fs-5">
+                أوامر الدفع المصرفية الالكترونية وخدمات المقاصة الالكترونية .
+              </li>
+              <li class="fs-5">الانترنت المصرفي .</li>
+              <li class="fs-5">خدمات جهاز الصراف الآلي ATM .</li>
+              <li class="fs-5">بطاقة الخصم المستخدمة في مواقع البيع .</li>
+              <li class="fs-5">الصيرفة عبر الهاتف النقال .</li>
+              <li class="fs-5">البنك الناطق</li>
+              <li class="fs-5">البنك المنزلي أو المكتبي .</li>
+              <li class="fs-5">نقاط البيع الالكترونية .</li>
+              <li class="fs-5">الصيرفة الهاتفية .</li>
+              <li class="fs-5">البنوك الالكترونية</li>
+            </ul>
+            <li class="fs-3 fw-bold">مفهوم العمليات المصرفية الالكترونية</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              هي تقديم البنوك للخدمات المصرفية التقليدية أو المبتكرة من خلال
+              شبكات اتصال الكترونية تقتصر صلاحية الدخول إليها على المشاركين فيها
+              وفقا لشروط العضوية التي تحددها البنوك، وذلك من خلال أحد المنافذ
+              على الشبكة كوسيلة لاتصال العملاء بها, بهدف :
+            </p>
+            <ul>
+              <li class="fs-5">
+                إتاحة معلومات عن الخدمات التي يؤديها البنك دون تقديم خدمات
+                مصرفية على الشبكة .
+              </li>
+              <li class="fs-5">
+                حصول العملاء على خدمات محدودة كالتعرف على معاملاتهم وأرصدة
+                حساباتهم وتحديث بياناتهم وطلب الحصول على قرو ض .
+              </li>
+              <li class="fs-5">
+                طلب العملاء تنفيذ عمليات مصرفية مثل تحويل الأموال فقط ولأغراض
+                هذه الضوابط فإن البنوك التي تقوم بتقديم الخدمات الواردة بالبند
+                تعتبر بنوكا تقدم عمليات مصرفية الكترونية
+              </li>
+            </ul>
+            <li class="fs-3 fw-bold">
+              شروط حصول البنوك على ترخيص لتقديم العمليات المصرفية الالكترونية
+            </li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              لابد من توافر مجموعة من لشروط من أجل حصول البنك على ترخيص تقديم
+              الخدمة المصرفية الالكترونية، ويمكن تلخيص هذه الشروط فيما يلي:
+            </p>
+            <ul>
+              <li class="fs-5">
+                يقتصر منح الترخيص على البنوك المسجلة لدى البنك المركزي وحدها .
+              </li>
+              <li class="fs-5">
+                أن يكون البنك مستوفيا للضوابط الرقابية التي تتعلق بمدى التزاماته
+                بكل من معيار كفاية رأس المال وأسس تصنيف القروض وتكوين المخصصات
+                والتوازن في مراكز العملات وتركز التوظيفات لدى المراسلين في
+                الخارج والتركز والاءتمان .
+              </li>
+              <li class="fs-5">
+                أن يعتمد البنك مبادئ فصيحة لإدارة مخاطر تقديم الخدمة من خلال
+                شبكات الاتصال الالكترونية والتي تشتمل على تقييم المخاطر والرقابة
+                عليها ومتابعتها .
+              </li>
+              <li class="fs-5">
+                أن يحدد البنك لدى طلبه للحصول على الترخيص نوعية الخدمات التي
+                سيقوم بتأديتها من خلال الشبكات.
+              </li>
+              <li class="fs-5">
+                أن يحدد البنك المسؤوليات الواقعة على العميل من جراء حصوله على
+                الخدمات عبر الشبكات .
+              </li>
+              <li class="fs-5">
+                إفصاح البنك المرخص له بالعمليات المصرفية الالكترونية في صفحة
+                الواب الخاصة به بما يفيد حصوله على ترخيص لتقديم خدماته عبر
+                الشبكات ورقم تاريخ الحصول عليه، مع ربط هذا الموقع بصفحة البنك
+                المركزي، حتى يتحقق العملاء من صحة الترخيص
+              </li>
+            </ul>
+            <li class="fs-3 fw-bold">مخاطر الصيرفة الالكترونية</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              هناك جملة من المخاطر المرتبطة بالخدمات المصرفية الالكترونية، يمكن
+              إيجازها فيمايلي :
+            </p>
+            <ol>
+              <li class="fs-5 fw-bold">المخاطر العملية والتشغيلية:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                في ظل الطلب المتزايد على الصيرفة الالكترونية تكون البنوك بحاجة
+                إلى تطوير استراتيجيتها لاستخدام قنوات التوزيع عبر الانترنت من
+                أجل توفير المعلومات لعملائها، وأيضا تنفيذ العمليات التي
+                يطلبونها، ولا شك في أن زيادة حدة المنافسة بين البنوك واختلاف
+                طبيعتها الاستراتيجيات المواكبة قد تعرض البنوك إلى مخاطر كبيرة في
+                حالة عدم سلامة عمليات التخطيط والتنفيذ لاستراتيجية الصيرفة
+                الالكترونية.
+              </p>
+              <li class="fs-5 fw-bold">مخاطر السمعة:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                يمكن أن تتعرض سمعة البنك لأضرار فادحة في حال عدم توفير الخدمات
+                المصرفية عبر الانترنت وفق معايير الأمان والسرية والدقة والتوقيت
+                والاستمرارية والاستجابة الفورية لحاجات ومتطلبات عملائه، ومن أجل
+                حماية البنك من أية أوضاع سلبية يمكن أن تسبب الأضرار لسمعته، فإن
+                هذا البنك يتعين عليه تطوير ورقابة ومتابعة معايير الأداء بالنسبة
+                لنشاطات الصيرفة الالكترونية .
+              </p>
+              <li class="fs-5 fw-bold">المخاطر القانونية:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                إن البنوك التي تؤدي خدماتها عبر الانترنت قد تصطدم بعدم معرفته
+                الدقيقة لقوانين وتشريعات حماية عملائه في دولة أخرى غير الدولة
+                التي يعمل فيها. كذلك هناك إمكانية الاستخدام غير المشروع أو سوء
+                استخدام المعلومات المحصلة عبر الانترنت من قبل أطراف خارجيين قد
+                يهاجمون مستودع معلومات البنك والموجودة لدى البنك ذاته ولدى مزودي
+                الخدمات الخارجيين الذين يتعامل معهم في هذا البنك ... ثم هناك
+                حقيقة أخرى وهي أن العقود الالكترونية والتوقيعات الالكترونية
+                مازالت قيد النضج وهي تختلف من دولة إلى أخرى.
+              </p>
+              <li class="fs-5 fw-bold">المخاطر التقليدية:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                والتي تتمثل في مشاكل السيولة وسياسة القروض المصرفية، لأن فشل
+                المشاركين في نظام نقل الأموال الالكترونية يؤدي إلى عدم قدرة
+                المشاركين الآخرين القيام بتنفيذ التزاماتهم في موعدها، وهذا يؤدي
+                إلى توتر العلاقات وزعزعة استقرار السوق المالي.
+              </p>
+              <li class="fs-5 fw-bold">المخاطر الأخرى:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                يرتبط أداء العمليات المصرفية الالكترونية بالمخاطر الخاصة
+                بالعمليات المصرفية التقليدية، ومن ذلك مخاطر الائتمان والسيولة
+                وسعر العائد ومخاطر السوق
+              </p>
+            </ol>
+            <li class="fs-3 fw-bold">مفهوم البنوك الالكترونية</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              هناك العديد من المصطلحات التي تطلق على البنوك المتطورة مثل البنوك
+              الالكترونية، بنوك الانترنت، البنوك الالكترونية عن بعد، البنك
+              المنزلي، بنك على الخط، بنوك الخدمة الذاتية وبنوك الواب، وعلى الرغم
+              من الاختلافات فإن جوهر البنوك الالكترونية لا يخرج عن إطار قيام
+              الزبون بإدارة حساباته أو إنجاز أعماله المتصلة بالبنك عبر شبكة
+              الانترنت سواء تم ذلك من المنزل أو المكتب وفي أي مكان ووقت يرغب فيه
+              ويعبر عنها "بالخدمة المالية عن بعد ".
+            </p>
+            <li class="fs-3 fw-bold">انواع البنوك الالكترونية</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              باختصار يمكن تقسيم البنوك الالكترونية إلى نوعين أساسيين، هما :
+            </p>
+            <ul>
+              <li class="fs-5 fw-bold">بنوك أرضية:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                وهي بنوك تمارس وتقدم محتلف الأنشطة والخدمات التقليدية، وفي نفس
+                الوقت تقدم خدمات الصيرفة الالكترونية ، أي لها حيز جغرافي يتعامل
+                فيه مع الزبائن بشكل ومباشر، وفي نفس الوقت له موقع الكتروني يمكن
+                أن يتصل من خلاله بعملائه ويقدم لهم خدمات الكترونيا
+              </p>
+              <li class="fs-5 fw-bold">بنوك افتراضية:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                وتسمى بنوك الانترنت وهي لا تملك أي كيان مادي، بل هي عبارة عن
+                مواقع مصممة على مستويات عبر شبكة الانترنت تقدم خدمات الكترونية
+                بحتة .
+              </p>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                و البنك الافتراضي هو بنك له وجود كامل على شبكة الانترنت ويحتوي
+                موقعه على كافة البرمجيات اللازمة للأعمال المصرفية، حيث يتيح هذا
+                البنك للعميل القيام بكافة الأعمال الخاصة بالبنك من أي مكان موجود
+                به، وذلك بواسطة خط يوفره البنك يسمح له بإنجاز كافة معاملاته دون
+                أن يضطر إلى الذهاب بنفسه إلى محل البنك
+              </p>
+            </ul>
+            <li class="fs-3 fw-bold">أنماط البنوك الإلكترونية</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              لا يمكن اعتبار أن كل موقع لبنك ما على شبكة الانترنت هو بنك
+              الكتروني، لذا لابد من تحديد الملامح الأساسية للبنوك الالكترونية
+              على الانترنت من خلال ما يلي :
+            </p>
+            <ul>
+              <li class="fs-5 fw-bold">النمط الأول :</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                الموقع المعلوماتي Informational : يمثل المستوى الأساسي والحد
+                الأدنىللنشاط الإلكتروني المصرفي، ويسمح هذا الموقع للبنك بتقديم
+                معلومات حول برامجه ومنتجاته وخدماتهالمصرفية .
+              </p>
+              <li class="fs-5 fw-bold">النمط الثاني :</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                الموقع الاتصالي Communicative : يتيح هذا الموقع عملية التبادل
+                الاتصالي بين البنك والعملاء مثل البريد الإلكتروني، تعبئة طلبات
+                أو نماذج على الخط، وتعديل معلومات القيود والحسابات ،الاستفسارات
+                .
+              </p>
+              <li class="fs-5 fw-bold">النمط الثالث:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                الموقع التبادلي Trançactional: ويمكن من خلاله أن يمارس البنك
+                نشاطاته في بيئة إلكترونية، كما يمكن للعميل القيام بمعظم معاملاته
+                إلكترونيا من سداد قيمة الفواتير، وإدارة التدفقات النقدية، وإجراء
+                كافة الخدمات الاستعلامية سواء داخل البنك أو خارجه
+              </p>
+            </ul>
+            <li class="fs-3 fw-bold">خصائص البنوك الالكترونية</li>
+            <ul>
+              <li class="fs-5">
+                إمكانية الوصول إلى قاعدة واسعة أكثر من المتعاملين .
+              </li>
+              <li class="fs-5">تقديم خدمات مصرفية كاملة وجديدة .</li>
+              <li class="fs-5">تخفيض التكاليف .</li>
+              <li class="fs-5">زيادة كفاءة البنوك .</li>
+              <li class="fs-5">تقديم خدمات البطاقات .</li>
+              <li class="fs-5">تحقيق الميزة التنافسية</li>
+            </ul>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">خدماتنا</a></li>
+            <li><a href="#">التصنيفات</a></li>
+            <li><a href="#">باقات الاسعار</a></li>
+            <li><a href="#">سياسات الخصوصية</a></li>
+          </ul>
+        </div>
+
+        <div class="row">جميع الحقوق محفوظة © 2024 Inferno - Banking Hub</div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<p class="fs-5 mb-0 p-0 text-justify"></p>

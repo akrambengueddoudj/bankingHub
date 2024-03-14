@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- ايقونات قوقل فونتس  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>BankingHub | Islamic Banking</title>
+  </head>
+  <body>
+    <div class="nav">
+      <!-- اللوغو -->
+      <a class="logo" href="#">
+        <img src="./pictures/images/logo.png" width="100px" alt="" />
+      </a>
+
+      <!-- ايقونة الاقسام في الريسبونسيف -->
+      <div class="navbar-toggler" type="button" id="bar">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </div>
+
+      <!-- قائمة المحتويات -->
+      <div class="menu-bar" id="navbar">
+        <ul class="menu-items m-0">
+          <li><a class="menu-bar-item" href="./index.html">الرئيسية</a></li>
+          <li>
+            <a class="menu-bar-item" href="./index.html#services">خدماتنا</a>
+          </li>
+          <li>
+            <div class="dropdown-center">
+              <div
+                class="menu-bar-item"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="nav-link-text">روابط هامة</span>
+              </div>
+              <ul class="dropdown-menu mt-2">
+                <div class="d-flex gap-3">
+                  <div>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bank-of-algeria.dz/ar/%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                        >البنك المركزي الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.mf.gov.dz/index.php/ar/"
+                        >وزارة المالية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.ons.dz/"
+                        >الديوان الوطني للإحصائيات</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://arableasing-dz.com/"
+                        >الشركة العربية للإيجار المالي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.maghrebleasingalgerie.com/"
+                        >المغاربية للإيجار المـــالي - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://snl.dz/ar/accueil-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9/"
+                        >الشركة الوطنية للإيجار المالي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.ijarleasingalgerie.dz/"
+                        >إيجار الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.abef-dz.org/abef/index.php"
+                        >جمعية البنوك والمؤسسات المالية</a
+                      >
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <span class="dropdown-header fw-bold"
+                        >البنوك التجارية</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bea.dz/"
+                        >بنك الجزائر الخارجي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bna.dz/ar/%d8%a7%d9%84%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                        >البنك الوطني الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://badrbanque.dz/ar/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/"
+                        >بنك الفلاحة والتنمية الريفية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bdl.dz/arabe/index.html"
+                        >بنك التنمية المحلية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.cpa-bank.dz/index.php/ar/"
+                        >القرض الشعبي الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.cnepbanque.dz/web/"
+                        >الصندوق الوطني للتوفير والاحتياط</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.albaraka-bank.dz/?lang=ar"
+                        >بنك البركة الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bank-abc.com/ar/CountrySites/Algeria/"
+                        >المؤسسة المصرفية العربية - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://ebanking.algerie.natixis.com/ebanking/index.ebk"
+                        >بنك NATIXIS - فرع الجزائر</a
+                      >
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://societegenerale.dz/fr/"
+                        >بنك SOCIETE GENERALE - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.citigroup.com/global/about-us/global-presence/algeria"
+                        >بنك CITIBANK N.A - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.arabbank.dz/"
+                        >بنك ARAB BANK PLC - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bnpparibas.dz/"
+                        >بنك BNP PARIBAS - فرع الجزاير</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.trustbank.dz/"
+                        >بنك TRUST BANK - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.agb.dz/"
+                        >بنك الخليج - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.housingbankdz.com/index.php/fr/"
+                        >بنك الإسكان للتجارة والتمويل - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.fransabank.dz/ar/home-arabic/"
+                        >بنك FRANSABANK فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.alsalamalgeria.com/"
+                        >بنك السلام - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.business.algeria.hsbc.com/"
+                        >بنك H.S.B.C. - فرع الجزائر</a
+                      >
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="menu-bar-item" href="./statistics.html">احصائيات</a>
+          </li>
+          <li><a class="menu-bar-item" href="./about.html">حول الشركة</a></li>
+        </ul>
+      </div>
+
+      <!-- ايقونات السوشيل ميديا  -->
+      <div class="navbar-social">
+        <span>تابعنا</span>
+        <ul class="m-0">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container pb-4 pt-5">
+      <div class="d-flex flex-column gap-3 p-3 rounded-4 text-black">
+        <div class="d-flex flex-column gap-2">
+          <h3 class="h3 m-0 fw-bold ps-4">
+            اولا: نظرة عامة عن الصيرفة الاسلامية
+          </h3>
+          <ol type="1">
+            <li class="fs-4 fw-bold">تعريف الصيرفة الاسلامية:</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              تعتبر الصيرفة الإسلامية جزءاً من النظام الاقتصادي الإسلامي وليست
+              المكون الوحيد لهذا النظام.
+            </p>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              فالصيرفة كانت معروفة حتى قبل الإسلام،فجاء الإسلام ونظّم الصيرفة من
+              خلال شرائع محددة في القرآن الكريم والسنة النبوية المطهرة والأحاديث
+              المتواترة وعمل النبي -صلى الله عليه وسلم- والصحابة في تنظيم
+              الصيرفة يداً بيد مثلاً بمثل على القاعدة الفطرية المعتبرة والمعترف
+              بها.
+            </p>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              ونمت هذه الخدمة بشكل كبير جداً . وقد كان من أهم حاجات المجتمعات
+              الإسلامية لإيجاد جهاز مصرفي يعمل طبقا لأحكام الشريعة الإسلامية
+              ويقوم بحفظ أمواله واستثمارها , بالإضافة إلى توفير التمويل اللازم
+              للمستثمرين بعيدا عن شبهة الربا.
+            </p>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              ويقصد بها النظام أو النشاط المصرفي المتوافق مع الشريعة الإسلامية.
+            </p>
+            <li class="fs-4 fw-bold">تعريف المصرف الاسلامي:</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              هو المصرف الذي يلتزم بتطبيق أحكام الشريعة الإسلامية في جميع
+              معاملاته المصرفية والاستثمارية ,من خلال تطبيق مفهوم الوساطة
+              المالية القائم على مبدأ المشاركة في الربح أو الخسارة
+            </p>
+            <li class="fs-4 fw-bold">اهمية المصارف الاسلامية</li>
+            <ul>
+              <li class="fs-5">
+                تلبية رغبة المجتمع المسلم في إيجاد قنوات للتعامل المصرفي بعيداً
+                عن استخدام أسعار الفائدة .
+              </li>
+              <li class="fs-5">
+                إيجاد مجال لتطبيق فقه المعاملات الشرعية في الأنشطة المصرفية.
+              </li>
+              <li class="fs-5">
+                تعد المصارف الإسلامية التطبيق العملي لأسس الاقتصاد الإسلامي.
+              </li>
+            </ul>
+            <li class="fs-4 fw-bold">خصائص المصارف الإسلامية:</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              تتميز المصارف الإسلامية بالعديد من الخصائص عن المصارف التقليدية من
+              أهمها :
+            </p>
+            <ul>
+              <li class="fs-5">
+                تطبيق أحكام الشريعة الإسلامية في كافة المعاملات المصرفية
+                والاستثمارية .
+              </li>
+              <li class="fs-5">
+                تطبيق أسلوب المشاركة في الربح أو الخسارة في المعاملات .
+              </li>
+              <li class="fs-5">
+                الالتزام بالصفات (التنموية, الاستثمارية , الإيجابية) في
+                معاملاتها الاستثمارية والمصرفية .
+              </li>
+              <li class="fs-5">
+                تطبيق أسلوب الوساطة المالية القائم على المشاركة.
+              </li>
+              <li class="fs-5">
+                تطبيق القيم والأخلاق الإسلامية في العمل المصرفي.
+              </li>
+              <li class="fs-5">تحريم التعامل بالربا</li>
+            </ul>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              كما تتميز المصارف الإسلامية بتقديم مجموعة من الأنشطة لا تقدمها
+              المصارف التقليدية وهي :
+            </p>
+            <ul>
+              <li class="fs-5">نشاط القرض الحسن .</li>
+              <li class="fs-5">نشاط صندوق الزكاة .</li>
+              <li class="fs-5">الأنشطة الثقافية المصرفية .</li>
+            </ul>
+            <li class="fs-4 fw-bold">مبادئ الصيرفة الإسلامية</li>
+            <ul>
+              <li class="fs-5">الأصل في المعاملات المالية الإباحة،</li>
+              <li class="fs-5">تحريم الربا،</li>
+              <li class="fs-5">تحريم الغرر،</li>
+              <li class="fs-5">تحريم المتاجرة في الأنشطة المحرمة والمشبوهة،</li>
+              <li class="fs-5">
+                ضرورة ربط العمليات المصرفية بالاقتصاد الحقيقي،
+              </li>
+              <li class="fs-5">
+                اعتماد مبدأ تقاسم المخاطر في صيغ البيوع وتقاسم الأرباح والخسائر
+                في صيغة المشاركة، وتقاسم الأرباح في صيغة المضاربة،
+              </li>
+              <li class="fs-5">تحريم بيع ما لم يقبض وربح ما لم يضمن،</li>
+              <li class="fs-5">
+                وغيرها من المبادئ الشرعية ذات الصلة بالمعاملات المالية
+                الإسلامية.
+              </li>
+            </ul>
+            <li class="fs-4 fw-bold">شباك الصيرفة الاسلامية:</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              يُقصد بــ «شباك الصيرفة الإسلامية»، هيكل ضمن البنك أو المؤسسة
+              المالية مكلف حصريا بخدمات ومنتجات الصيرفة الإسلامية.
+            </p>
+            <li class="fs-4 fw-bold">
+              الشروط المتعلقة بشباك الصيرفة الاسلامية:
+            </li>
+            <ul>
+              <li class="fs-5">
+                يجب أن يكون «شباك الصيرفة الإسلامية» مستقلا ماليا عن الهياكل
+                الأخرى للبنك أو المؤسسة المالية.
+              </li>
+              <li class="fs-5">
+                يجب الفصل الكامل بين المحاسبة الخاصة بـ «شباك الصيرفة الإسلامية»
+                والمحاسبة الخاصة بالهياكل الأخرى للبنك أو المؤسسة المالية، ويجب
+                أن يسمح هذا الفصل، على وجه الخصوص، بإعداد جميع البيانات المالية
+                المخصصة حصريا لنشاط «شباك الصيرفة الإسلامية »
+              </li>
+              <li class="fs-5">
+                يجب أن تكون حسابات زبائن «شباك الصيرفة الإسلامية» مستقلة عن باقي
+                الحسابات الأخرى للزبائن.
+              </li>
+              <li class="fs-5">
+                تُضمن استقلالية «شباك الصيرفة الإسلامية» من خلال هيكل تنظيمي
+                ومستخدمين مخصصين حصريا لذلك ، بما في ذلك على مستوى شبكة البنك أو
+                المؤسسة المالية.
+              </li>
+              <li class="fs-5">
+                يجب على البنوك والمؤسسات المالية الذين تحصلوا على الترخيص المسبق
+                لتسويق منتجات الصيرفة الإسلامية، أن تُعلم زبائنها بجداول
+                التسعيرات والشروط الدنيا والقصوى التي تُطبق عليهم.
+              </li>
+              <li class="fs-5">
+                كما يجب على البنوك إعلام المودعين، خاصة أصحاب حسابات الاستثمار،
+                حول الخصائص ذات الصلة بطبيعة حساباتهم.
+              </li>
+            </ul>
+          </ol>
+          <h3 class="h3 m-0 fw-bold ps-4">
+            ثانيا: الصيرفة الاسلامية حسب المشرع الجزائري
+          </h3>
+          <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+            ( النظام رقم 20 20- 02 المؤرخ في 20 رجب عام 1441 الموافق 15 مارس
+            ،2020 - المحدد للعمليات البنكية المتعلقة بالصيرفة الإسلامية وقواعد
+            ممارستها من طرف البنوك والمؤسسات المالية )
+          </p>
+          <ol type="1">
+            <li class="fs-4 fw-bold">نشاة الصيرفة الاسلامية في الجزائر:</li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              على غرار الدول الإسلامية الأخرى عرفت الجزائر العمل المصرفي
+              الإسلامي مبكرا مقارنة بها، أين تعود أول فكرة لإنشاء أول بنك اسلامي
+              في سنة 1929 في الجزائر بمبادرة من الشيخ أبو اليقظان من جمعية
+              العلماء المسلمين الجزائريين. حيث دعا الشيخ أعيان ورجال الأعمال في
+              المدن الجزائرية الكبرى إلى بلورة فكرة بنك وفق قواعد الفقه
+              الإسلامي، و قد لقيت دعوته ترحاباً من قبل كبار رجال الأعمال
+              القاطنين بمدينة الجزائر. فقدموا ملفاً كاملاً لإنشاء مصرف باسم
+              "البنك الإسلامي الجزائري". و بعد أن تم إعداد قانونه الأساسي وجمع
+              رأسماله الاسمي من قبل رجال أعمال المسلمين بمدينة الجزائر، وتمّ حتى
+              تعيين مدير له، تصدت سلطات الاحتلال الفرنسية لهذا المشروع و أوقفته
+              بالكامل. منذ ذلك الحين و المطالب تتزايد بضرورة توسيع نشاط المصارف
+              الإسلامية في الجزائر؛ للاستفادة قدر الإمكان من خدماتها في عمليات
+              الادخار والقروض وتمويل المشاريع، إلى أن تحقق الأمر بترخيص لأول
+              مصرف إسلامي بالجزائر، (مصرف البركة 20 مايو 1991)، ثم تلاه ( مصرف
+              السلام 2008) ، اللذان يعملان حاليا في الجزائر، لكن لا يوجد قانون
+              واضح وخاص ينظم عمل ونشاط النظام المصرفي الإسلامي، جنبا الى جنب
+            </p>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              النظام المصرفي التقليدي، خاصة بعد الاصلاحات المالية والمصرفية لسنة
+              1990، فالمصارف الإسلامية في الجزائر كانت تعاني من غياب تقنين خاص
+              بالمصارف التي تتعامل بأحكام الشريعة الإسلامية، إذ لا وجود لمثل هذا
+              الوعاء ضامن قانوني على مستوى البنك المركزي، والذي يؤطره ويحميه من
+              مجموعة المخاطر المصرفية الممكن حدوثها في السوق المصرفية. لكن
+              الجزائر أمام فرصة قوية ومتاحة لأن تصبح نموذجاً مميّزاً في المصرفية
+              الإسلامية محلّياً وإقليمياً، إذا ما استغلّت الطاقة الاستيعابية
+              للسوق النقدية الواعدة كأحد أهمّ مصادر تعبئة الموارد المالية، ومن
+              ثَمّ تمويل احتياجاتها، فتفكير الحكومة في تبني الصيرفة الاسلامية،
+              (خاصة بعد الأزمة النفطية مؤخراً) يعدُ خطوة هامة، بإصدار تنظيمين (
+              تنظيم رقم 18-02 المؤرخ في صفر عام 1440الموافق لـ 04 نوفمبر 2018
+              المتضمن قواعد ممارسة العمليات المصرفية المتعلقة بالصيرفة التشاركية
+              من طرف المصارف والمؤسسات المالية. ثم تم إلغائه و إصدار ( تنظيم رقم
+              20-02 المؤرخ في 20 رجب عام 1441الموافق لـ 15مارس 2020، الذي يحدد
+              العمليات البنكية المتعلقة بالصيرفة الإسلامية وقواعد ممارستها من
+              طرف البنوك والمؤسسات المالية.)،
+            </p>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              أي أن هذا التنظيم يخص الصيرفة الإسلامية في الجزائر بشكل عام، كبنوك
+              وكشبابيك حتى و إن كان هذا التنظيم في بدايات تطبيقه إلا أنه يبقى
+              عزوف فئة كبيرة من فئات المجتمع الجزائري في التعامل مع هذه الشبابيك
+              الاسلامية لاعتبارات عقائدية ودينية محضة ( كشبهة اختلاط الأموال
+              الربوية بها....... )،
+            </p>
+            <li class="fs-4 fw-bold">
+              تعريف العمليات البنكية المتعلقة بالصيرفة الاسلامية
+            </li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              تُعد عملية بنكية متعلقة بالصيرفة الإسلامية كل عملية بنكية لا يترتب
+              عنها تحصيل أو تسديد الفوائد. يجب على هذه العمليات أن تكون مطابقة
+              للأحكام المشار إليها في المواد 66 إلى 69 من الأمر رقم 03-11
+              المتعلق بالنقد والقرض، المعدل والمتمم.
+            </p>
+            <li class="fs-4 fw-bold">منتجات الصيرفة الاسلامية</li>
+            <ul>
+              <li class="fs-5 fw-bold">المرابحة،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هي عقد يقوم بموجبه البنك أو المؤسسة المالية ببيع لزبون سلعة
+                معلومة، سواء كانت منقولة أو غير منقولة، يملكها البنك أو المؤسسة
+                المالية، بتكلفة اقتنائها مع إضافة هامش ربح متفق عليه مسبقا ووفقا
+                لشروط الدفع المتفق عليها بين الطرفين.
+              </p>
+              <li class="fs-5 fw-bold">المشاركة،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هي عقد بين بنك أو مؤسسة مالية وواحد أو عدة أطراف، بهدف المشاركة
+                في رأس مال مؤسسة أو في مشروع أو في عمليات تجارية من أجل تحقيق
+                أرباح.
+              </p>
+              <li class="fs-5 fw-bold">المضاربة،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هي عقد يُقدّم بموجبه بنك أو مؤسسة مالية، المسمى مقرض للأموال،
+                رأس المال اللازم للمقاول، الذي يقدم عمله في مشروع من أجل تحقيق
+                أرباح.
+              </p>
+              <li class="fs-5 fw-bold">الإجارة،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هي عقد إيجار يضع من خلاله البنك أو المؤسسة المالية المسمى
+                المؤجر, تحت تصرف الزبون المسمى المستأجر، وعلى أساس الإيجار، سلعة
+                منقولة أو غير منقولة، يملكها البنك أو المؤسسة المالية، لفترة
+                محددة مقابل تسديد إيجار يتم تحديده في العقد.
+              </p>
+              <li class="fs-5 fw-bold">السلم،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هو عقد يقوم من خلاله البنك أو المؤسسة المالية الذي يقوم بدور
+                المشتري بشراء سلعة، التي تسلم له اجلا من طرف زبونه، مقابل الدفع
+                الفوري والنقدي.
+              </p>
+              <li class="fs-5 fw-bold">الإستصناع،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هو عقد يتعهد بمقتضاه البنك أو المؤسسة المالية بتسليم سلعة إلى
+                زبونه صاحب الأمر، أو بشراء لدى مصنع سلعة ستصنع وفقا لخصائص محددة
+                او متفق عليها بين الاطراف بسعر ثابت و وفقا لكيفيات تسديد متفق
+                عليها مسبقا بين الطرفين
+              </p>
+              <li class="fs-5 fw-bold">حسابات الودائع،:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هي حسابات تحتوي على أموال يتم إيداعها في بنك من طرف أفراد أو
+                كيانات، مع الالتزام بإعادة هذه الأموال أو ما يعادلها إلى المودع
+                أو إلى شخص آخر معين، عند الطلب أو حسب شروط متفق عليها مسبقا
+              </p>
+              <li class="fs-5 fw-bold">الودائع في حسابات الاستثمار.:</li>
+              <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+                هي توظيفات لأجل، تترك تحت تصرف البنك من طرف المودع لغرض
+                استثمارها في تمويلات إسلامية وتحقيق أرباح.
+              </p>
+            </ul>
+            <li class="fs-4 fw-bold">
+              هيئة الرقابة الشرعية في البنوك الاسلامية:
+            </li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              في إطار ممارسة العمليات المتعلقة بالصيرفة الإسلامية، يتعين على
+              البنك أو المؤسسة المالية إنشاء هيئة الرقابة الشرعية، تتكون هذه
+              الهيئة من ثلاثة أعضاء على الأقل، يتم تعيينهم من طرف الجمعية
+              العامة. تكمن مهام هيئة الرقابة الشرعية على وجه الخصوص و في إطار
+              مطابقة المنتجات للشريعة، في رقابة نشاطات البنك أو المؤسسة المالية
+              المتعلقة بالصيرفة الإسلامية.
+            </p>
+            <li class="fs-4 fw-bold">
+              طلب ترخيص لتسويق منتجات الصيرفة الاسلامية:
+            </li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              يتعين على البنك أو المؤسسة المالية تقديم ملف لبنك الجزائر لطلب
+              الترخيص المسبق لتسويق منتجات الصيرفة الإسلامية. يتكون هذا الملف
+              على وجه الخصوص، من الوثائق التالية :
+            </p>
+            <ul>
+              <li class="fs-5">
+                شهادة المطابقة لأحكام الشريعة مسلمة من طرف الهيئة الشرعية
+                الوطنية للإفتاء للصناعة المالية الإسلامية
+              </li>
+              <li class="fs-5">بطاقة وصفية للمنتوج</li>
+              <li class="fs-5">
+                رأي مسؤول رقابة المطابقة للبنك أو المؤسسة المالية، طبقا لأحكام
+                المادة 25 من النظام رقم 11- 08 المؤرخ في 3 محرم عام 1433 الموافق
+                28 نوفمبر سنة 2011.
+              </li>
+            </ul>
+            <li class="fs-4 fw-bold">
+              حساب ودائع الاستثمار في شباك الصيرفة الاسلامية:
+            </li>
+            <p class="mb-0 p-0 fs-5 indent-2 text-justify">
+              يحق لصاحب حساب ودائع الاستثمار الحصول على حصة من الأرباح الناجمة
+              عن «شباك الصيرفة الإسلامية» و يتحمل حصة من الخسائر المحتملة التي
+              يسجلها «شباك الصيرفة الإسلامية» في التمويلات التي يقوم بها.
+            </p>
+            <li class="fs-4 fw-bold">
+              امثلة عن شهادة المطابقة الشرعية للشبابيك الصيرفة الاسلامية
+            </li>
+            <ul>
+              <li class="fs-5">
+                <a
+                  href="./PDF/الاجارة المنتهية بالتمليك عقار.pdf"
+                  target="_blank"
+                  >الاجارة المنتهية بالتمليك عقار pdf</a
+                >
+              </li>
+              <li class="fs-5">
+                <a href="./PDF/المرابحة سيارة.pdf" target="_blank"
+                  >المرابحة سيارة pdf</a
+                >
+              </li>
+              <li class="fs-5">
+                <a
+                  href="./PDF/حساب الاستثمار الاسلامي الغير مخصص.pdf"
+                  target="_blank"
+                  >حساب الاستثمار الاسلامي الغير مخصص pdf</a
+                >
+              </li>
+              <li class="fs-5">
+                <a href="./PDF/حساب الصك الاسلامي.pdf" target="_blank"
+                  >حساب الصك الاسلامي pdf</a
+                >
+              </li>
+              <li class="fs-5">
+                <a href="./PDF/النافذة الاسلامية.pdf" target="_blank"
+                  >النافذة الاسلامية pdf</a
+                >
+              </li>
+            </ul>
+          </ol>
+          <h3 class="h3 m-0 fw-bold ps-4">
+            ثالثا: قائمة البنوك الجزائرية التي تحتوي على شبابيك الصيرفة
+            الاسلامية:
+          </h3>
+          <ul>
+            <li class="fs-5">البنك الوطني الجزائري (BNA)</li>
+            <li class="fs-5">بنك الجزائر الخارجي (BEA)</li>
+            <li class="fs-5">بنك الفلاحة والتنمية الريفية (BADR)</li>
+            <li class="fs-5">بنك التنمية المحلية (BDL)</li>
+            <li class="fs-5">القرض الشعبي الجزائري (CPA)</li>
+            <li class="fs-5">الصندوق الوطني للتوفير والاحتياط (CNEP)</li>
+            <li class="fs-5">بنك البركة الجزائري</li>
+            <li class="fs-5">
+              المؤسسة المصرفية العربية - الجزائر تحت مسمى البراق بنك (BANK ABC)
+            </li>
+            <li class="fs-5">تراست بنك TRUST BANK - الجزائر (TBA)</li>
+            <li class="fs-5">بنك الخليج - الجزائر (AGB)</li>
+            <li class="fs-5">بنك الإسكان للتجارة والتمويل - الجزائر (HBTF)</li>
+            <li class="fs-5">بنك السلام - الجزائر (ASBA)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">خدماتنا</a></li>
+            <li><a href="#">التصنيفات</a></li>
+            <li><a href="#">باقات الاسعار</a></li>
+            <li><a href="#">سياسات الخصوصية</a></li>
+          </ul>
+        </div>
+
+        <div class="row">جميع الحقوق محفوظة © 2024 Inferno - Banking Hub</div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<p class="fs-5 mb-0 p-0 text-justify"></p>

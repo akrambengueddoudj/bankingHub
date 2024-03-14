@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- ايقونات قوقل فونتس  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>BankingHub | Banking Laws</title>
+  </head>
+  <body>
+    <div class="nav">
+      <!-- اللوغو -->
+      <a class="logo" href="#">
+        <img src="./pictures/images/logo.png" width="100px" alt="" />
+      </a>
+
+      <!-- ايقونة الاقسام في الريسبونسيف -->
+      <div class="navbar-toggler" type="button" id="bar">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </div>
+
+      <!-- قائمة المحتويات -->
+      <div class="menu-bar" id="navbar">
+        <ul class="menu-items m-0">
+          <li><a class="menu-bar-item" href="./index.html">الرئيسية</a></li>
+          <li>
+            <a class="menu-bar-item" href="./index.html#services">خدماتنا</a>
+          </li>
+          <li>
+            <div class="dropdown-center">
+              <div
+                class="menu-bar-item"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="nav-link-text">روابط هامة</span>
+              </div>
+              <ul class="dropdown-menu mt-2">
+                <div class="d-flex gap-3">
+                  <div>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bank-of-algeria.dz/ar/%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                        >البنك المركزي الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.mf.gov.dz/index.php/ar/"
+                        >وزارة المالية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.ons.dz/"
+                        >الديوان الوطني للإحصائيات</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://arableasing-dz.com/"
+                        >الشركة العربية للإيجار المالي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.maghrebleasingalgerie.com/"
+                        >المغاربية للإيجار المـــالي - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://snl.dz/ar/accueil-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9/"
+                        >الشركة الوطنية للإيجار المالي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.ijarleasingalgerie.dz/"
+                        >إيجار الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.abef-dz.org/abef/index.php"
+                        >جمعية البنوك والمؤسسات المالية</a
+                      >
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <span class="dropdown-header fw-bold"
+                        >البنوك التجارية</span
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bea.dz/"
+                        >بنك الجزائر الخارجي</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bna.dz/ar/%d8%a7%d9%84%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                        >البنك الوطني الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://badrbanque.dz/ar/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/"
+                        >بنك الفلاحة والتنمية الريفية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bdl.dz/arabe/index.html"
+                        >بنك التنمية المحلية</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.cpa-bank.dz/index.php/ar/"
+                        >القرض الشعبي الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.cnepbanque.dz/web/"
+                        >الصندوق الوطني للتوفير والاحتياط</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.albaraka-bank.dz/?lang=ar"
+                        >بنك البركة الجزائري</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bank-abc.com/ar/CountrySites/Algeria/"
+                        >المؤسسة المصرفية العربية - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://ebanking.algerie.natixis.com/ebanking/index.ebk"
+                        >بنك NATIXIS - فرع الجزائر</a
+                      >
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://societegenerale.dz/fr/"
+                        >بنك SOCIETE GENERALE - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.citigroup.com/global/about-us/global-presence/algeria"
+                        >بنك CITIBANK N.A - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.arabbank.dz/"
+                        >بنك ARAB BANK PLC - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.bnpparibas.dz/"
+                        >بنك BNP PARIBAS - فرع الجزاير</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.trustbank.dz/"
+                        >بنك TRUST BANK - فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.agb.dz/"
+                        >بنك الخليج - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.housingbankdz.com/index.php/fr/"
+                        >بنك الإسكان للتجارة والتمويل - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.fransabank.dz/ar/home-arabic/"
+                        >بنك FRANSABANK فرع الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.alsalamalgeria.com/"
+                        >بنك السلام - الجزائر</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        target="_blank"
+                        href="https://www.business.algeria.hsbc.com/"
+                        >بنك H.S.B.C. - فرع الجزائر</a
+                      >
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="menu-bar-item" href="./statistics.html">احصائيات</a>
+          </li>
+          <li><a class="menu-bar-item" href="./about.html">حول الشركة</a></li>
+        </ul>
+      </div>
+
+      <!-- ايقونات السوشيل ميديا  -->
+      <div class="navbar-social">
+        <span>تابعنا</span>
+        <ul class="m-0">
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container pb-4 pt-5">
+      <div class="d-flex flex-column gap-3 p-3 rounded-4 text-black">
+        <div class="d-flex flex-column gap-2">
+          <h1 class="h1 m-0 fw-bold text-center">قوانين مصرفية</h1>
+          <ul>
+            <li class="fs-4">
+              الأمر رقم 01-01 مؤرخ في 4 ذي الحجة عام 1421 الموافق 27 فبراير سنة
+              2001 يعدل ويتمم القانون رقم 90-10 المؤرخ في 19 رمضان عام 1410
+              الموافق 14 ابريل سنة 1990 والمتعلق بالنقد والقرض
+            </li>
+            <a
+              href="./PDF/1.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              أمر رقم 03-11 مؤرخ 27 جمادى الثانية عام 1424 الموافق 26 غشت سنة
+              2003، يتعلق بالنقد و القرض
+            </li>
+            <a
+              href="./PDF/2.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              أمر رقم 10-04 مؤرخ 16 رمضان عام 1431 الموافق 26 غشت سنة 2010، يعدل
+              و يتمم الأمر رقم 03-11 مؤرخ 27 جمادى الثانية عام 1424 الموافق 26
+              غشت سنة 2003، والمتعلق بالنقد والقرض
+            </li>
+            <a
+              href="./PDF/3.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              القــانــون رقــم 17-10 مـــؤرخ في 20 مــحـــرم عــام 1439
+              المـوافـق 11 أكـــتــوبـــر ســنــة ،2017 يــتـــمم الأمــر رقم
+              03-11 المـــؤرخ في 27 جمادى الثانية عـام 1424 الموافق 26 غشت سنة
+              2003 والمتعلق بالنقد والقرض
+            </li>
+            <a
+              href="./PDF/4.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              أمر رقم. 71-47. المؤرخ في. 30. يونيو سنة. 1971. ، يتضمن تنظيم
+              مؤسسات القرض
+            </li>
+            <a
+              href="./PDF/5.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              قانون رقم 09-23 مؤرخ في 3 ذي الحجة عام 1444 الموافق 21 يونيو سنة
+              2023 ،يتضمن القانون النقدي والمصرفي
+            </li>
+            <a
+              href="./PDF/6.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              نظام رقم 11-08 المؤرخ في 28 نوفمبر 2011، يتعلق بالرقابة الداخلية
+              للبنوك والمؤسسات المالية
+            </li>
+            <a
+              href="./PDF/7.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              القانون رقم 86-12 المؤرخ في 19 أوت 1986 الخاص بالنظام المصرفي
+            </li>
+            <a
+              href="./PDF/8.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              القانون رقم 90 - 10 المؤرخ فى 19 رمضان عام 1410 الموافق 14 ابريل
+              1990 والمتعلق بالنقد والقرض
+            </li>
+            <a
+              href="./PDF/9.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              قانون رقم 88-06 مؤرخ في 22 جمادى الاولى عام 1408 الموافق 12 يناير
+              سنة 1988 يعدل و يتمم القانون رقم 86-12 المؤرخ في 19 غشت سنة 1986
+              المتعلق بنظام البنوك والقرض
+            </li>
+            <a
+              href="./PDF/10.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+            <li class="fs-4">
+              نظام رقم 23- 01 مؤرخ في 5 ربیع الأول عام 1445 الموافق 21 سبتمبر
+              سنة 2023، یتعلق بشروط الترخیص بتأسیس مكاتب الصرف، واعتمادھا
+              ونشاطھا
+            </li>
+            <a
+              href="./PDF/11.pdf"
+              target="_blank"
+              class="btn btn-outline-primary fs-5 fw-bold"
+            >
+              تصفح وتحميل القرار
+              <svg
+                class="pdfBtn"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                />
+              </svg>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">تواصل معنا</a></li>
+            <li><a href="#">خدماتنا</a></li>
+            <li><a href="#">التصنيفات</a></li>
+            <li><a href="#">باقات الاسعار</a></li>
+            <li><a href="#">سياسات الخصوصية</a></li>
+          </ul>
+        </div>
+
+        <div class="row">جميع الحقوق محفوظة © 2024 Inferno - Banking Hub</div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<p class="fs-5 mb-0 p-0 text-justify"></p>
