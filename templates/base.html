@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ايقونات قوقل فونتس  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Banking Hub | {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.css' %}" />
+    {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    {% block custom_css %}{% endblock %}
+  </head>
+  <body>
+    {% block content %}{% endblock %} {% include "parts/_footer.html" %}
+    <!-- modals -->
+    <div
+      class="modal fade"
+      id="signinModal"
+      tabindex="-1"
+      aria-labelledby="signinModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">تسجيل الدخول</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-2">
+              <form id="signinForm">
+                {% csrf_token %}
+                <div class="d-flex flex-column gap-2">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="usernameInputSignin"
+                      placeholder="إسم المستخدم"
+                    />
+                    <label for="usernameInputSignin">إسم المستخدم</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="passwordInputSignin"
+                      placeholder="كلمة السر"
+                    />
+                    <label for="passwordInputSignin">كلمة السر</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary w-25"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button id="signinbtn" type="button" class="btn btn-primary w-50">
+              تسجيل الدخول
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% block modals %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src='{% static "js/accounts.js" %}'></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

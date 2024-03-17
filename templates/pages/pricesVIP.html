@@ -1,0 +1,119 @@
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% load static %} {% block title %}Prices VIP{% endblock%} {% block content %}
+<!-- include _nav.html -->
+{% include "parts/_nav.html" %}
+<div class="container pb-4 pt-5">
+  <div class="d-flex flex-column gap-3 p-3 text-black">
+    <div class="d-flex flex-column gap-4">
+      <h3 class="h3 m-0 fw-bold ps-4">الإنتقال إلى العضوية VIP</h3>
+      <div class="row gy-3">
+        <div class="col-12 col-md-6 pe-md-4">
+          <div
+            class="service-price w-100 border border-primary border-2 rounded-5 p-2 d-flex flex-column justify-content-between align-items-center"
+          >
+            <ul
+              class="list-unstyled w-100 d-flex flex-column gap-3 align-items-center"
+            >
+              <li class="fs-4 fw-bold">إشتراك عميل</li>
+              <li class="fs-2 d-flex gap-2">
+                <span class="fw-bold">2000 دج /</span>
+                <span class="small align-self-end pt-2">الشهر</span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span>طلب اي استشارة</span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> حجز مواعيد </span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> المساعدة في اختيار البنك المناسب </span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> ايجاد حلول للنزاعات البنكية </span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> خط ساخن مع خبراء ماليين </span>
+              </li>
+            </ul>
+            <a
+              href="{% url 'recipe_VIP' type='client' %}"
+              class="btn btn-primary w-75 fs-4 fw-bold rounded-pill"
+            >
+              اشتراك
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 ps-md-4">
+          <div
+            class="service-price w-100 border border-primary border-2 rounded-5 p-2 d-flex flex-column justify-content-between align-items-center"
+          >
+            <ul
+              class="list-unstyled w-100 d-flex flex-column gap-3 align-items-center"
+            >
+              <li class="fs-4 fw-bold">إشتراك بنك</li>
+              <li class="fs-2 d-flex gap-2">
+                <span class="fw-bold">20000 دج /</span>
+                <span class="small align-self-end pt-2">12 شهر</span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> الترويج للخدمات الجديد </span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> الاستفادة من عملاء جدد </span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> الاطلاع على اراء العملاء </span>
+              </li>
+              <li class="fs-5 d-flex align-items-center gap-2">
+                <i
+                  class="fa fa-check-circle text-success"
+                  aria-hidden="true"
+                ></i>
+                <span> التعريف بالبنك </span>
+              </li>
+            </ul>
+            <a
+              href="{% url 'recipe_VIP' type='bank' %}"
+              class="btn btn-primary w-75 fs-4 fw-bold rounded-pill"
+            >
+              اشتراك
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

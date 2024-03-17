@@ -1,0 +1,397 @@
+:root {
+  --bs-primary: #7d8b2c;
+}
+.logo-nav {
+  width: 14rem;
+  height: 4rem;
+}
+.service-card {
+  height: 10rem;
+  background-image: linear-gradient(to bottom right, #7d8b2c, #a7b171);
+}
+.service-card:hover {
+  background-image: linear-gradient(to bottom right, #7d8b2cda, #a7b171da);
+}
+.card {
+  background-image: linear-gradient(to bottom right, #7d8b2c80, #a7b17180);
+}
+a.service-card,
+a.service-card:link,
+a.service-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+body {
+  font-family: "Noto Naskh Arabic", sans-serif;
+  background-color: var(--bs-gray-400);
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #7d8b2c;
+  --bs-btn-border-color: #7d8b2c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #a7b171;
+  --bs-btn-hover-border-color: #a7b171;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #a7b171;
+  --bs-btn-active-border-color: #a7b171;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #7d8b2c;
+  --bs-btn-disabled-border-color: #7d8b2c;
+}
+.btn-outline-primary {
+  --bs-btn-color: #7d8b2c;
+  --bs-btn-border-color: #7d8b2c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7d8b2c;
+  --bs-btn-hover-border-color: #7d8b2c;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #7d8b2c;
+  --bs-btn-active-border-color: #7d8b2c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #7d8b2c;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #7d8b2c;
+  --bs-gradient: none;
+}
+.border-primary {
+  border-color: #7d8b2c !important;
+}
+.nav-link.active {
+  color: #7d8b2c !important;
+}
+.nav-link.active .nav-link-text {
+  padding: 0 0.25rem;
+  border-bottom: 2px solid #7d8b2c;
+}
+.nav-link:hover .nav-link-text {
+  border-bottom: 2px solid #7d8b2c;
+}
+.indent-0 {
+  text-indent: 0 !important;
+}
+
+.indent-1 {
+  text-indent: 0.25rem !important;
+}
+
+.indent-2 {
+  text-indent: 0.5rem !important;
+}
+
+.indent-3 {
+  text-indent: 1rem !important;
+}
+
+.indent-4 {
+  text-indent: 1.5rem !important;
+}
+
+.indent-5 {
+  text-indent: 3rem !important;
+}
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+ul p,
+ol p {
+  margin-right: -2rem;
+}
+.pdfBtn {
+  width: 1.5rem;
+}
+.dropdown-menu {
+  background-image: linear-gradient(to bottom right, #7d8b2c80, #a7b17180);
+}
+.importantContainer {
+  background-image: linear-gradient(to bottom right, #7d8b2c80, #a7b17180);
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #fff;
+  background-color: #7d8b2c;
+}
+
+#setConsultingArea,
+#detailsTextarea {
+  height: 12rem;
+  border: 2px solid #7d8b2c;
+}
+.square-container {
+  position: relative;
+  width: calc(100% / 5);
+  padding-bottom: calc(100% / 5);
+  overflow: hidden;
+}
+.square-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: -1rem;
+}
+.remove-pic-svg {
+  width: 1rem;
+  top: 0.25rem;
+  right: 0.5rem;
+}
+.bg-gallery {
+  background-image: url("../pictures/Wallpaper-mountains.jpeg");
+  background-size: cover;
+  background-position: 0rem -56px;
+  filter: opacity(50%) grayscale(40%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border: 2px solid #7d8b2c;
+}
+.service-price {
+  height: 26rem;
+}
+.w-fit {
+  width: fit-content;
+}
+.serviceVIP-card {
+  background-color: #7d8b2c;
+  height: 24rem;
+  transition: all 0.3s ease-in-out;
+}
+.serviceVIP-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: #839447;
+  border-radius: 0.5rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+.serviceVIP-card:hover {
+  transform: scale(1.1);
+}
+.serviceVIP-card:hover::after {
+  left: 0;
+}
+
+/* ======================================================================== start navbar ======================================================== */
+
+/* ============================ nav ============================  */
+.nav {
+  font-family: "Readex Pro", sans-serif;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  transition: all 0.5s ease;
+  z-index: 1054;
+}
+.nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3);
+}
+/* ============================  navbar-toggler  ===================================== */
+
+.nav .navbar-toggler {
+  display: none;
+  border: none;
+  outline: none;
+}
+.nav .navbar-toggler .toggler-icon {
+  width: 27px;
+  height: 3px;
+  background-color: #121212;
+  margin: 5px 0;
+  position: relative;
+  display: block;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* ============================  menu-bar  ===================================== */
+
+.nav .menu-bar .menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav .menu-bar .menu-items li {
+  margin: 0 15px;
+}
+.nav .menu-bar .menu-items li .menu-bar-item {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav .menu-bar .menu-items li a:hover {
+  color: #839447;
+}
+/* ============================  social-media-bar  ===================================== */
+.nav .navbar-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav .navbar-social span {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #6c6c6c;
+}
+.nav .navbar-social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav .navbar-social ul li {
+  margin: 0 7px;
+}
+.nav .navbar-social ul li a {
+  color: #6c6c6c;
+  font-size: 22px;
+}
+
+/* ================================================================== footer =============================================================  */
+
+.footer {
+  background: #999f9f;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: black;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+  margin: 0 7px;
+}
+
+/* ====================================================================== responsive ===============================================  */
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+@media only screen and (max-width: 946px) {
+  .nav .navbar-social {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav .navbar-toggler {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 16px;
+    z-index: 100000000;
+  }
+
+  .nav .menu-bar {
+    position: fixed;
+    top: 55px;
+    left: -360px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(256, 256, 256, 0.9);
+    transition: all 0.6s ease;
+  }
+  .nav .menu-bar .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 40px 0;
+  }
+  .nav .menu-bar .menu-items li {
+    margin: 2rem 30px;
+  }
+}
+@media only screen and (max-width: 541px) {
+  .nav .logo {
+    width: 20px;
+  }
+  .nav .menu-bar .menu-items li {
+    margin: 0 10px;
+  }
+  .nav .menu-bar .menu-items li a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 574px) {
+  .card-img-top {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-member-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .vw-md-100 {
+    width: 100vw !important;
+  }
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 1399px) {
+}

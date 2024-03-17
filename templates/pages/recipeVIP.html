@@ -1,0 +1,66 @@
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% load static %} {% block title %}Become VIP{% endblock%} {% block content %}
+<!-- include _nav.html -->
+{% include "parts/_nav.html" %}
+<div class="container pb-4 pt-5">
+  <div class="d-flex flex-column gap-3 p-3 text-black">
+    <div class="d-flex flex-column gap-4">
+      <h3 class="h3 m-0 fw-bold ps-4">الإنتقال إلى العضوية VIP</h3>
+      <p class="mb-0 p-0 fs-4 indent-2 text-justify">
+        الرجاء إرسال المبلغ كاملا ({{ price }} دج) إلى حساب البريد الجاري الآتي
+        ثم إرفاق صورة الوصل ليتم التحقق من الإرسال:
+      </p>
+      <span
+        class="badge text-bg-info px-4 py-2 mx-auto fs-4 d-flex justify-content-center align-items-center"
+        >79999900232323232323</span
+      >
+      <label for="recipeInput" class="btn btn-primary mx-auto px-4 w-md-100"
+        >إرفاق الوصل</label
+      >
+      <input type="file" id="recipeInput" class="d-none" accept="image/*" />
+      <input
+        type="text"
+        id="recipeTypeInput"
+        class="d-none"
+        value="{{ type }}"
+      />
+      {% csrf_token %}
+      <div class="w-100" id="recipeOutput"></div>
+      <button
+        class="btn btn-primary w-50 w-md-100 mx-auto"
+        id="confirmPayment"
+        disabled
+      >
+        تأكيد الدفع
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block modals %}
+<div
+  class="modal fade"
+  id="sentRecipeModal"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="sentRecipeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body d-flex flex-column gap-4">
+        <p class="mb-0 p-0 fs-4 indent-2 fw-bold w-75 text-center mx-auto mt-3">
+          شكرا لانضمامك إلى خدمة VIP الخاصة بمنصة بانكين هب، سيتم إشعارك فور
+          قبول عضويتك
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <a type="button" class="btn btn-primary w-50" href="{% url 'home' %}">
+          موافق
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% load static %} {% block title %}Financial Consulting{% endblock%} {% block content %}
+<!-- include _nav.html -->
+{% include "parts/_nav.html" %}
+<div class="container pb-4 pt-5">
+  <div class="d-flex flex-column gap-3 p-3 rounded-4 text-black">
+    <div class="d-flex flex-column gap-2">
+      <p
+        class="mb-0 p-0 fs-4 indent-2 fw-bold w-75 w-md-100 text-center mx-auto mt-3"
+      >
+        استفد من خبرتنا في المجال البنكي! نقدم لك استشارات مالية وبنكية شخصية
+        متخصصة تتناسب مع احتياجاتك وأهدافك المالية, دعنا نساعدك في تحقيق أهدافك
+        بفعالية واستراتيجية, اطلب استشارتك الآن وانطلق نحو مستقبل مالي أفضل!
+      </p>
+      <p
+        class="mb-0 p-0 fs-4 indent-2 fw-bold w-75 w-md-100 w-md-100 text-center mx-auto mt-3"
+      >
+        نوظف مجموعة من الخبراء في القطاع البنكي لديهم تجربة وخبرة كافية لتقديم
+        حلول و اجابات دقيقة وفعالة لكل استشارة تطلبها
+      </p>
+      <div class="form-floating mt-3 w-75 w-md-100 mx-auto">
+        <textarea
+          class="form-control"
+          placeholder="قم بطرح استشارتك الان"
+          id="setConsultingArea"
+        ></textarea>
+        <label for="setConsultingArea">قم بطرح استشارتك الان</label>
+      </div>
+      <button
+        class="btn btn-primary w-75 w-md-100 mx-auto py-2"
+        id="sendConsultingBtn"
+      >
+        إرسال الاستشارة
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block modals %}
+<div
+  class="modal fade"
+  id="sendConsultingModal"
+  tabindex="-1"
+  aria-labelledby="sendConsultingModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body d-flex flex-column gap-4">
+        <p class="mb-0 p-0 fs-4 indent-2 fw-bold w-75 text-center mx-auto mt-3">
+          استشارتك قيد مراجعة خبرائنا الماليين, سوف نقوم بالرد في غضون دقائق
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-primary w-50"
+          data-bs-dismiss="modal"
+        >
+          موافق
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

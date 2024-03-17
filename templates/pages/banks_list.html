@@ -1,0 +1,391 @@
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% load static %} {% block title %}Banks List{% endblock%} {% block content %}
+<!-- include _nav.html -->
+{% include "parts/_nav.html" %}
+<div class="container pb-4 pt-5">
+  <div class="d-flex flex-column gap-3 p-3 rounded-4 text-black">
+    <div class="d-flex flex-column gap-2">
+      <h1 class="h1 m-0 fw-bold text-center">قائمة البنوك</h1>
+      <h3 class="h3 m-0 fw-bold">اولا: البنوك التجارية</h3>
+      <div class="row justify-content-center g-2">
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              بنك الجزائر الخارجي (BEA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 11 شارع العقيد عميروش – الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              البنك الوطني الجزائري (BNA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 8 شارع أرنستو تشي جيفارا، الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              بنك الفلاحة والتنمية الريفية (BADR)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 17 شارع العقيد عميروش، الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              بنك التنمية المحلية (BDL)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 5 شارع ڨاسي عمار، سطاوالي، الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              القرض الشعبي الجزائري (CPA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 2 شارع العقيد عميروش، الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              الصندوق الوطني للتوفير والاحتياط (CNEP)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : المجمع السكني G6 ڨاريدي 1 القبة – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">بنك البركة الجزائري</h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : حي بوتلجة حوديف فيلا رقم 1 روكاد الجنوب، بن عكنون
+              – الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              المؤسسة المصرفية العربية - الجزائر (BANK ABC)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 38 شارع الإخوة الثلاثة بوعدو (سابقا: عنصر المرأة
+              المتوحشة)،</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">NATIXIS - الجزائر</h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : حي الأعمال باب الزوار – الجزائرالعاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              SOCIETE GENERALE - الجزائر
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : إقامة الكرمة 16105 جسر قسنطينة، الجزائرالعاصمة –
+              BP : 55 بئر خادم</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              CITIBANK N.A - الجزائر (فرع بنك)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : حي الأعمال باب الزوار – الجزائر</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              ARAB BANK PLC - الجزائر (فرع بنك)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : نهج السعادة – إقامة شعباني، واد حيدرة – حيدرة –
+              الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              BNP PARIBAS - الجزاير
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : الحي التجاري بالجزائرالعاصمة ، المجمع السكني رقم
+              1 – رقم 3، باب الزوار – الجزائرالعاصمة – 16024 14- TRUST BANK -
+              الجزائر (TBA)</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              TRUST BANK - الجزائر (TBA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 70 طريق العربي عليك حيدرة – الجزائرالعاصمة – BP
+              772
+            </span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              بنك الخليج - الجزائر (AGB)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : حوش طريق الشراقة، BP 26 bis دالي إبراهيم –
+              الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              بنك الإسكان للتجارة والتمويل - الجزائر (HBTF)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : شارع 16 أحمد أواكد، BP 103، الرمز البريدي رقم
+              16320 دالي إبراهيم – الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">FRANSABANK الجزاير</h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 45 B. المجمع السكني بروفانس الصغرى، سيدي يحي –
+              حيدرة – الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              بنك السلام - الجزائر (ASBA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 233 شارع أحمد أواكد دالي إبراهيم – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              H.S.B.C. - الجزائر (فرع بنك)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : مركز الأعمال، الصنوبر البحري المحمدية – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+      </div>
+      <h3 class="h3 m-0 fw-bold">ثانيا: المؤسسات المالية</h3>
+      <div class="row justify-content-center g-2">
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              الصندوق الوطني للتعاون الفلاحي (CNMA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 24 شارع فيكتور هوغو، الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              الشركة المالية للاستثمارات، المساهمة والتوظيف (SOFINANCE - SPA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : نهج محمد بلقاسمي (مبنى أجينور) العناصر – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              شركة إعادة تمويل الرهن العقاري (SRH)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 3 مركز الأعمال، سعيد حمدين – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              الشركة العربية للإيجار المالي (ALC)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : شارع أحمد واكد دالي إبراهيم – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              المغاربية للإيجار المـــالي - الجزائر (MLA)
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 31 نهج محمد بلقاسمي، العناصر – الجزائر
+              العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              الشركة الوطنية للإيجار المالي (SNL)
+            </h3>
+            <span class="text-center fs-5"
+              >المكتب الرئيسي : نهج 01 نوفمبر – زرالدة – الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">إيجار الجزائر (ILA)</h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : 1 شارع الأرز، المرادية – الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">الجزائر إيجار (EDI)</h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : حي الجوهرة، برج ب، الطابق الخامس، الحامة –
+              الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              صندوق الاستثمار الوطني
+            </h3>
+            <span class="text-center fs-5"
+              >المقر الرئيسي : برج رقم 1 الحامة، 170 شارع حسيبة بن بوعلي –
+              الجزائر العاصمة</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

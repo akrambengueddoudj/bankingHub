@@ -1,0 +1,128 @@
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% load static %} {% block title %}Loan Calculator{% endblock%} {% block content %}
+<!-- include _nav.html -->
+{% include "parts/_nav.html" %}
+<div class="container pb-4 pt-5">
+  <div class="d-flex flex-column gap-3 p-3 rounded-4 text-black">
+    <div class="d-flex flex-column gap-2">
+      <h1 class="h1 m-0 fw-bold text-center">حاسبة القروض</h1>
+      <div class="alert alert-warning fs-5" role="alert">
+        <span class="fw-bold">ملاحظة:</span>
+        <span
+          >حساب القروض وفقا لهذه الطرق يعد محاكاة لطريقة الحساب فقط و لا يمكن
+          اعتماد هذه المبالغ بصفة نهائية
+        </span>
+      </div>
+      <div class="row justify-content-center g-2">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.bna.dz/simulateurs/"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              قروض البنك الوطني الجزائري (BNA)
+            </h3>
+            <span class="text-center fs-5">القروض الاسلامية فقط</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://badrbanque.dz/simulateur/"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك الفلاحة والتنمية الريفية (BADR)
+            </h3>
+            <span class="text-center fs-5"> القروض العقارية فقط</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.bdl.dz/simul.html"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك التنمية المحلية (BDL)
+            </h3>
+            <span class="text-center fs-5">القروض العقارية فقط</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.cnepbanque.dz/web/simulateur-de-credit/"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك الصندوق الوطني للتوفير والاحتياط (CNEP)
+            </h3>
+            <span class="text-center fs-5">القروض العقارية فقط</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.albaraka-bank.dz/simulateur-ar/"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك البركة الجزائري
+            </h3>
+            <span class="text-center fs-5">جميع انواع القروض</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://particuliers.societegenerale.dz/fr/emprunter/simulateurs-pret-immobilier/"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك SOCIETE GENERALE - الجزائر.
+            </h3>
+            <span class="text-center fs-5">القروض العقارية فقط</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.bnpparibas.dz/simulateurs-credit-auto-symbol/"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك BNP PARIBAS - الجزاير -
+            </h3>
+            <span class="text-center fs-5">قروض سيارات رونو</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.trustbank.dz/index.php/2-non-categorise/43-simulation-rahati"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك TRUST BANK - الجزائر (TBA)
+            </h3>
+            <span class="text-center fs-5">قروض راحتي</span>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a
+            class="d-flex flex-column align-items-center justify-content-center gap-1 text-light rounded-4 service-card px-2"
+            role="button"
+            href="https://www.alsalamalgeria.com/fr/simulations/list-310-0.html"
+          >
+            <h3 class="h3 m-0 p-0 fw-bold text-center">
+              حساب قروض بنك السلام - الجزائر:
+            </h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,920 @@
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% load static %} {% block title %}Home{% endblock %}
+{% block styles %}<link
+  rel="stylesheet"
+  href="{% static 'css/style.css' %}"
+/>{% endblock %} {% block content %}
+<!-- include _nav.html -->
+{% include "parts/_nav.html" %}
+<!-- start Back  -->
+<div id="home" class="back">
+  <div class="overlay"></div>
+  <div class="hero-shape">
+    <img src="{% static 'pictures/images/wave.svg' %}" alt="" />
+  </div>
+</div>
+<!-- end Back  -->
+
+<!-- start text in the back  -->
+<div class="hero-text">
+  <h3>مرحبا بك في Banking Hub للاستشارات المالية</h3>
+  <h6>
+    توجيهات مالية متميزة وتسهيلات بنكية لتحقيق اختياراتك بكل يسر <br />
+    نضمن لك تجربة مالية متميزة وسلسة
+  </h6>
+  <!-- ايقونات عملية التسجيل  -->
+  <ul
+    class="header-btn d-flex flex-column flex-md-row justify-content-center gap-3 p-0"
+  >
+    {% if user.userprofile.type == 'f' or not user.is_authenticated %}
+    <!-- prettier-ignore -->
+    <li class="p-0 m-0">
+      <a
+        class="main-btn btn-one"
+        {% if not user.is_authenticated %}
+        data-bs-toggle="modal"
+        data-bs-target="#joinBasicModal"
+        {% else %}
+        href="/category/become_VIP"
+        {% endif %}
+      >
+        انضمام VIP
+      </a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endif %} 
+    {% if not user.is_authenticated %}
+    <li class="p-0 m-0">
+      <a
+        class="main-btn btn-two"
+        data-bs-toggle="modal"
+        data-bs-target="#joinBasicModal"
+        >تسجيل حساب مجاني</a
+      >
+    </li>
+    {% endif %}
+  </ul>
+</div>
+<!-- start categories part =================================================================================================== -->
+
+<section id="wrapper">
+  <section id="categories" class="categories">
+    <h3>التصنيفات</h3>
+    <h6>
+      في هذا القسم نوفر لك مجموعة من المعلومات المتعلقة بالنظام البنكي
+      <br />اختر احد الاقسام للاطلاع
+    </h6>
+    <div class="categorie-cards">
+      <div class="card">
+        <h2>الصيرفة الإسلامية</h2>
+        <p>خدمات مالية متوافقة مع الشريعة الإسلامية</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'islamic_banking' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>حاسبة القروض</h2>
+        <p>هنا يمكنك الوصول الى جميع حواسب القروض</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'loan_calculator' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>الخدمات المصرفية</h2>
+        <p>الخدمات المالية المقدمة من البنوك</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'banking_services' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>السوق المالي في الجزائر</h2>
+        <p>نشاط التداول والاستثمار في الجزائر</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'stock_market' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>السياسة المالية</h2>
+        <p>استراتيجيات الحكومة في إدارة المال</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'fiscal_policy' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>السياسة النقدية</h2>
+        <p>سياسات البنك المركزي بشأن العرض النقدي</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'monetary_policy' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>الصيرفة الإلكترونية</h2>
+        <p>خدمات مالية عبر الإنترنت والتطبيقات الرقمية</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'electronic_banking' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>القروض</h2>
+        <p>التمويل المالي المستلف من البنوك</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'loans' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>الودائع</h2>
+        <p>المبالغ المالية المودعة في البنوك</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'deposits' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>بنك الجزائر</h2>
+        <p>مؤسسة مالية تقدم خدمات مصرفية في الجزائر</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'algeria_bank' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>قائمة البنوك</h2>
+        <p>قائمة بالمؤسسات المالية المرخص لها</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'banks_list' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>قوانين مصرفية</h2>
+        <p>اللوائح والقوانين المتعلقة بالمؤسسات المالية</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'banking_laws' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>كيفية فتح حساب بنكي</h2>
+        <p>الإجراءات لافتتاح حساب في البنك</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'open_bank_account' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>معلومات عامة</h2>
+        <p>المعلومات الشاملة حول القطاع المالي</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'general_info' %}">قراءة</a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>خدمات جديدة</h2>
+        <p>قائمة الخدمات التي تقدمهاالبنوك المعتمدة</p>
+        <button class="categorie-btn" type="button">
+          <a href="{% url 'new_services' %}">قراءة</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- services section ===================================================================================================== -->
+
+  <section id="services">
+    <div class="container-fluid">
+      <h1 class="text-center mt-5 display-3 fw-bold">خدماتنا</h1>
+      <hr class="mx-auto mb-5 w-25" />
+      <div class="row mb-5">
+        <a
+          href="{% url 'financial_consulting' %}"
+          class="col-12 col-sm-6 col-md-4 col-xl-3"
+        >
+          <div
+            class="w-100 my-3 px-2 py-4 text-light d-flex flex-column gap-2 align-items-center rounded-3 position-relative overflow-hidden serviceVIP-card"
+          >
+            <img
+              src="{% static 'pictures/images/consultation.png' %}"
+              alt="consulting"
+              class="card-img-top m-0"
+            />
+            <h3 class="text-center m-0">استشارات مالية</h3>
+            <hr class="mx-auto my-0 w-75" />
+            <p class="small text-center w-75">
+              نقدم لك اجابات دقيقة عن استشاراتك من خلال خبراءنا الماليين لتحقيق
+              أهدافك المالية وتطوير استراتيجيات استثمارية مدروسة لمستقبل مالي
+              مستقر ومزدهر
+            </p>
+          </div>
+        </a>
+        <a
+          href="{% url 'reservation' %}"
+          class="col-12 col-sm-6 col-md-4 col-xl-3"
+        >
+          <div
+            class="w-100 my-3 px-2 py-4 text-light d-flex flex-column gap-2 align-items-center rounded-3 position-relative overflow-hidden serviceVIP-card"
+          >
+            <img
+              src="{% static 'pictures/images/booking.png' %}"
+              alt="booking"
+              class="card-img-top m-0"
+            />
+            <h3 class="text-center m-0">حجز مواعيد</h3>
+            <hr class="mx-auto my-0 w-75" />
+            <p class="small text-center w-75">
+              خدمة حجز المواعيد تسهل على المستخدمين تنظيم زياراتهم للبنوك لتلبية
+              احتياجاتهم المالية بكفاءة وسهولة حيث يمكن للعملاء تحديد موعد محدد
+              للقاء بموظف مصرفي في البنك
+            </p>
+          </div>
+        </a>
+        <a
+          href="{% url 'promotion' %}"
+          class="col-12 col-sm-6 col-md-4 col-xl-3"
+        >
+          <div
+            class="w-100 my-3 px-2 py-4 text-light d-flex flex-column gap-2 align-items-center rounded-3 position-relative overflow-hidden serviceVIP-card"
+          >
+            <img
+              src="{% static 'pictures/images/advertising.png' %}"
+              alt="advertising"
+              class="card-img-top m-0"
+            />
+            <h3 class="text-center m-0">ترويج للبنوك</h3>
+            <hr class="mx-auto my-0 w-75" />
+            <p class="small text-center w-75">
+              كبنك! يمكنك الحصول على واجهة ترويجية مميزة لخدماتك الجديدة عبر
+              Banking Hub. قم بنشر الإعلانات بكل سهولة وسرعة لجذب عملاء جدد
+              وتعزيز تواجدك في السوق المالي
+            </p>
+          </div>
+        </a>
+        <a
+          href="{% url 'choose_bank' %}"
+          class="col-12 col-sm-6 col-md-4 col-xl-3"
+        >
+          <div
+            class="w-100 my-3 px-2 py-4 text-light d-flex flex-column gap-2 align-items-center rounded-3 position-relative overflow-hidden serviceVIP-card"
+          >
+            <img
+              src="{% static 'pictures/images/choosing.png' %}"
+              alt="choosing"
+              class="card-img-top m-0"
+            />
+            <h3 class="text-center m-0">اختيار بنك مناسب</h3>
+            <hr class="mx-auto my-0 w-75" />
+            <p class="small text-center w-75">
+              المالية. دع منصة Banking Hub توجهك إلى البنك الذي يلبي توقعاتك
+              ويوفر لك الخدمات المناسبة لتحقيق أهدافك المالية بكل سهولة ويسر
+              بناءا على خبرة خبرائنا الماليين
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- start pricing section ==================================================================================== -->
+  <section id="pricing" class="pricing offset">
+    <h3>أسعار الخدمة</h3>
+    <h6>
+      اليك باقة من الاسعار التنافسية من أجل طلب خدماتنا<br />
+      اختر الباقة المناسبة لك
+    </h6>
+    <div class="table gap-3 gap-md-2">
+      <!-- free premiur =================================================================== -->
+
+      <div class="basic">
+        <div class="b-head">
+          <h3>اشتراك مجاني</h3>
+        </div>
+        <div class="price">
+          <span class="sing">دج</span>
+          <span class="cent">00</span>
+          <span class="currency">.00\</span>
+          <span class="month">مجانا</span>
+        </div>
+        <ul>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>الاطلاع على
+            المعلومات مجانا
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>اضافة ردود فعل
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>الوصول الى
+            حواسب قروض البنوك
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>الاطلاع على اخر
+            خدمات البنوك
+          </li>
+        </ul>
+        <!-- زر الاسعار  -->
+        <ul class="header-btn">
+          <a class="main-btn btn-two" href="#">اشترك الان</a>
+        </ul>
+      </div>
+
+      <!-- client premium ----------------------------------------------------------------------- -->
+      <div class="basic standard">
+        <div class="b-head">
+          <h3>اشتراك عميل</h3>
+        </div>
+        <div class="price">
+          <span class="sing">دج</span>
+          <span class="cent">00</span>
+          <span class="currency">.2000\</span>
+          <span class="month">12شهر</span>
+        </div>
+        <ul>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>طلب اي استشارة
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>حجز مواعيد
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>المساعدة في
+            اختيار البنك المناسب
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>ايجاد حلول
+            للنزاعات البنكية
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>خط ساخن مع
+            خبراء ماليين
+          </li>
+        </ul>
+        <!-- زر الاسعار  -->
+        <ul class="header-btn">
+          <a class="main-btn btn-two" href="#">اشترك الان</a>
+        </ul>
+      </div>
+
+      <!-- Bank premium ========================================================= -->
+
+      <div class="basic">
+        <div class="b-head">
+          <h3>اشتراك بنك</h3>
+        </div>
+        <div class="price">
+          <span class="sing">دج</span>
+          <span class="cent">00</span>
+          <span class="currency">.20000\</span>
+          <span class="month">12شهر</span>
+        </div>
+        <ul>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>الترويج للخدمات
+            الجديد
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>الاستفادة من
+            عملاء جدد
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>الاطلاع على
+            اراء العملاء
+          </li>
+          <li>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>التعريف بالبنك
+          </li>
+        </ul>
+        <!-- زر الاسعار  -->
+        <ul class="header-btn">
+          <a class="main-btn btn-two" href="#">اشترك الان</a>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section ===========================================================================================-->
+  <section id="contact" class="contact">
+    <h3>تواصل معنا</h3>
+    <div class="form">
+      <div class="first-row">
+        <input
+          id="fullNameInput"
+          type="text"
+          placeholder="الاسم الكامل"
+          name=""
+        />
+        <input
+          id="emailInput"
+          type="text"
+          placeholder="البريد الالكتروني"
+          name=""
+        />
+      </div>
+
+      <div class="second-row">
+        <input id="subjectInput" type="text" placeholder="الموضوع" name="" />
+        <input id="phoneInput" type="text" placeholder="رقم الهاتف" name="" />
+      </div>
+
+      <textarea id="messageInput" placeholder="الرسالة" rows="5"></textarea>
+
+      <ul class="header-btn">
+        <button id="sentMessageBtn" class="main-btn btn-two">ارسال</button>
+      </ul>
+    </div>
+  </section>
+</section>
+{% endblock %} {% block modals %} {% comment %}
+<div
+  class="modal fade"
+  id="joinVIPModal"
+  tabindex="-1"
+  aria-labelledby="joinVIPModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">إنشاء حساب VIP</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body d-flex flex-column gap-4">
+        <div class="d-flex flex-column gap-2">
+          <form id="joinVIPForm">
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div class="form-floating w-50">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstNameInput"
+                    placeholder="الإسم"
+                  />
+                  <label for="firstNameInput">الإسم</label>
+                </div>
+                <div class="form-floating w-50">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastNameInput"
+                    placeholder="اللقب"
+                  />
+                  <label for="lastNameInput">اللقب</label>
+                </div>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usernameInput"
+                  placeholder="إسم المستخدم"
+                />
+                <label for="usernameInput">إسم المستخدم</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="البريد الإلكتروني"
+                />
+                <label for="emailInput">البريد الإلكتروني</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneInput"
+                  placeholder="رقم الهاتف"
+                />
+                <label for="phoneInput">رقم الهاتف</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressInput"
+                  placeholder="العنوان"
+                />
+                <label for="addressInput">العنوان</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary w-25"
+          data-bs-dismiss="modal"
+        >
+          إلغاء
+        </button>
+        <button type="button" class="btn btn-primary w-50">إنشاء حساب</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcomment %}
+<div
+  class="modal fade"
+  id="joinBasicModal"
+  tabindex="-1"
+  aria-labelledby="joinBasicModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">إنشاء حساب</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body d-flex flex-column gap-4">
+        <div class="d-flex flex-column gap-2">
+          <form id="joinBasicForm">
+            {% csrf_token %}
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div class="form-floating w-50">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstNameInputBasic"
+                    placeholder="الإسم"
+                  />
+                  <label for="firstNameInputBasic">الإسم</label>
+                </div>
+                <div class="form-floating w-50">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastNameInputBasic"
+                    placeholder="اللقب"
+                  />
+                  <label for="lastNameInputBasic">اللقب</label>
+                </div>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usernameInputBasic"
+                  placeholder="إسم المستخدم"
+                />
+                <label for="usernameInputBasic">إسم المستخدم</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInputBasic"
+                  placeholder="البريد الإلكتروني"
+                />
+                <label for="emailInputBasic">البريد الإلكتروني</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="passwordInputBasic"
+                  placeholder="كلمة السر"
+                />
+                <label for="passwordInputBasic">كلمة السر</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneInputBasic"
+                  placeholder="رقم الهاتف"
+                />
+                <label for="phoneInputBasic">رقم الهاتف</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressInputBasic"
+                  placeholder="العنوان"
+                />
+                <label for="addressInputBasic">العنوان</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary w-25"
+          data-bs-dismiss="modal"
+        >
+          إلغاء
+        </button>
+        <button id="registerfreebtn" type="button" class="btn btn-primary w-50">
+          إنشاء حساب
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="importantLinksModal"
+  tabindex="-1"
+  aria-labelledby="importantLinksModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content importantContainer">
+      <div class="modal-body">
+        <div class="row overflow-auto">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-1 align-items-center align-items-lg-start"
+          >
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.bank-of-algeria.dz/ar/%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                >البنك المركزي الجزائري</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.mf.gov.dz/index.php/ar/"
+                >وزارة المالية</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.ons.dz/"
+                >الديوان الوطني للإحصائيات</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://arableasing-dz.com/"
+                >الشركة العربية للإيجار المالي</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.maghrebleasingalgerie.com/"
+                >المغاربية للإيجار المـــالي - الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://snl.dz/ar/accueil-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9/"
+                >الشركة الوطنية للإيجار المالي</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.ijarleasingalgerie.dz/"
+                >إيجار الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.abef-dz.org/abef/index.php"
+                >جمعية البنوك والمؤسسات المالية</a
+              >
+            </li>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-1 align-items-center align-items-lg-start"
+          >
+            <li>
+              <span class="dropdown-header fw-bold">البنوك التجارية</span>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.bea.dz/"
+                >بنك الجزائر الخارجي</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.bna.dz/ar/%d8%a7%d9%84%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+                >البنك الوطني الجزائري</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://badrbanque.dz/ar/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/"
+                >بنك الفلاحة والتنمية الريفية</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.bdl.dz/arabe/index.html"
+                >بنك التنمية المحلية</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.cpa-bank.dz/index.php/ar/"
+                >القرض الشعبي الجزائري</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.cnepbanque.dz/web/"
+                >الصندوق الوطني للتوفير والاحتياط</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.albaraka-bank.dz/?lang=ar"
+                >بنك البركة الجزائري</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.bank-abc.com/ar/CountrySites/Algeria/"
+                >المؤسسة المصرفية العربية - الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://ebanking.algerie.natixis.com/ebanking/index.ebk"
+                >بنك NATIXIS - فرع الجزائر</a
+              >
+            </li>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column gap-1 align-items-center align-items-lg-start"
+          >
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://societegenerale.dz/fr/"
+                >بنك SOCIETE GENERALE - فرع الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.citigroup.com/global/about-us/global-presence/algeria"
+                >بنك CITIBANK N.A - فرع الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.arabbank.dz/"
+                >بنك ARAB BANK PLC - فرع الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.bnpparibas.dz/"
+                >بنك BNP PARIBAS - فرع الجزاير</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.trustbank.dz/"
+                >بنك TRUST BANK - فرع الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.agb.dz/"
+                >بنك الخليج - الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.housingbankdz.com/index.php/fr/"
+                >بنك الإسكان للتجارة والتمويل - الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.fransabank.dz/ar/home-arabic/"
+                >بنك FRANSABANK فرع الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.alsalamalgeria.com/"
+                >بنك السلام - الجزائر</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                target="_blank"
+                href="https://www.business.algeria.hsbc.com/"
+                >بنك H.S.B.C. - فرع الجزائر</a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="messageSentModal"
+  tabindex="-1"
+  aria-labelledby="messageSentModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content importantContainer">
+      <div class="modal-body d-flex flex-column gap-4">
+        <p class="mb-0 p-0 fs-4 indent-2 fw-bold w-75 text-center mx-auto mt-3">
+          تم إرسال رسالتك، سنقوم بالرد عليك في أقرب وقت
+        </p>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-primary w-50"
+            data-bs-dismiss="modal"
+          >
+            موافق
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block scripts %}
+<script>
+  {% if error_message %}
+  console.error("{{error_message}}");{% endif %}
+</script>
+{% endblock %}

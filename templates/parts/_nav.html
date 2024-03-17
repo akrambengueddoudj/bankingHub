@@ -1,0 +1,77 @@
+{% load static %}
+<!-- start nav  -->
+<div class="nav">
+  <!-- اللوغو -->
+  <a class="logo" href="{% url 'home' %}">
+    <img src="{% static 'pictures/images/logo.png' %}" width="100px" alt="" />
+  </a>
+
+  <!-- ايقونة الاقسام في الريسبونسيف -->
+  <div class="navbar-toggler" type="button" id="bar">
+    <span class="toggler-icon"></span>
+    <span class="toggler-icon"></span>
+    <span class="toggler-icon"></span>
+  </div>
+
+  <!-- قائمة المحتويات -->
+  <div class="menu-bar" id="navbar">
+    <ul class="menu-items m-0">
+      <li><a class="menu-bar-item" href="{% url 'home' %}">الرئيسية</a></li>
+      <li>
+        <a class="menu-bar-item" href="{% url 'home' %}#services">خدماتنا</a>
+      </li>
+      <li>
+        <div class="dropdown-center">
+          <div
+            class="menu-bar-item"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#importantLinksModal"
+          >
+            <span class="nav-link-text">روابط هامة</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a class="menu-bar-item" href="{% url 'statistics' %}">احصائيات</a>
+      </li>
+      <li><a class="menu-bar-item" href="{% url 'about' %}">حول الشركة</a></li>
+      {% if user.is_authenticated %}
+      <li>
+        <a class="menu-bar-item" href="{% url 'logout' %}">تسجيل الخروج</a>
+      </li>
+      {% else %}
+      <li>
+        <a
+          role="button"
+          class="menu-bar-item"
+          data-bs-toggle="modal"
+          data-bs-target="#signinModal"
+        >
+          تسجيل الدخول
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+
+  <!-- ايقونات السوشيل ميديا  -->
+  <div class="navbar-social d-none">
+    <span>تابعنا</span>
+    <ul class="m-0">
+      <li>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- end nav  -->
