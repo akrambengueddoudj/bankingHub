@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-pb!_4uluui9qm=(ckv!=bcalh27xi+awj!!(i=7--lra385o!g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '143.198.70.237']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,10 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bankinghubdb',
-        'USER': 'bankinghubuser',
-        'PASSWORD': '123456789ACHref',
+        'USER': 'postgres',
+        'PASSWORD': 'akira',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
