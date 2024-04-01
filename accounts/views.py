@@ -31,9 +31,11 @@ def signup(request):
 
     if fname and lname and username and password and email and phone and address:
         if User.objects.filter(username=username).exists():
+            return JsonResponse({"message": "اسم المستخدم موجود بالفعل"}, status=400)
             return JsonResponse({"message": "Username already exists.", 'code': 1})
         else:
             if User.objects.filter(email=email).exists():
+                return JsonResponse({"message": "البريد الالكتروني مستخدم بالفعل"}, status=400)
                 return JsonResponse({"message": "Email already used.", 'code': 2})
             else:
                 user = User.objects.create_user(
@@ -46,6 +48,7 @@ def signup(request):
                 auth.login(request, user)
                 return JsonResponse({"message": "User created", 'code': 3})
     else:
+        return JsonResponse({"message": "املأ كل البيانات"}, status=400)
         return JsonResponse({"message": "Fill All data", 'code': 4})
 
 
@@ -68,11 +71,14 @@ def signin(request):
                 message = "Logged In Successfully."
                 code = 0
             else:
+                return JsonResponse({"message": "حسابك غير مفعل"}, status=400)
                 message = "Your account is disabled."
         else:
+            return JsonResponse({"message": "خطأ في اسم المستخدم أو كلمة السر"}, status=400)
             message = "Invalid username or password."
         context = {"message": message, 'code': code}
     else:
+        return JsonResponse({"message": "الرجاء ادخال كلمة السر واسم المستخدم"}, status=400)
         context = {
             "message": "Please enter  your username and password.", 'code': 2}
     return JsonResponse(context)
@@ -96,6 +102,11 @@ def confirm_payement(request):
             payement_recipe = PayementRecipe(
                 user_profile=request.user.userprofile, image=image, recipe_type=type)
             payement_recipe.save()
+            if type == "bank":
+                request.user.userprofile.type = "b"
+            else:
+                request.user.userprofile.type = "p"
+            request.user.userprofile.save()
             return JsonResponse({'message': "Payement Added", 'code': 0})
         return JsonResponse({'message': "Fill all data", 'alldata': [str(image), type], 'post': request.POST, 'code': 1})
     else:

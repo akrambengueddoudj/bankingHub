@@ -77,14 +77,14 @@ def general_info(request):
 
 def financial_consulting(request):
     if request.user.is_authenticated:
-        if request.user.userprofile.type == "p" or request.user.userprofile.type == "b":
+        if request.user.userprofile.type == "p":
             return render(request, 'pages/financial_consulting.html')
     return redirect('home')
 
 
 def reservation(request):
     if request.user.is_authenticated:
-        if request.user.userprofile.type == "p" or request.user.userprofile.type == "b":
+        if request.user.userprofile.type == "p":
             context = {'banks': models.Banks.objects.all(),
                        'branchs': models.BankBranch.objects.all(), 'cities': models.BankCity.objects.all()}
             return render(request, 'pages/reservation.html', context)
@@ -100,7 +100,7 @@ def promotion(request):
 
 def choose_bank(request):
     if request.user.is_authenticated:
-        if request.user.userprofile.type == "p" or request.user.userprofile.type == "b":
+        if request.user.userprofile.type == "p":
             return render(request, 'pages/choose_bank.html')
     return redirect('home')
 
@@ -253,3 +253,7 @@ def set_service(request):
 def new_services(request):
     services = models.Service.objects.prefetch_related('pictures')
     return render(request, 'pages/new_services.html', {'services': services})
+
+
+def terms_of_use(request):
+    return render(request, 'pages/terms_of_use.html')

@@ -48,6 +48,7 @@
           </div>
           <div class="modal-body d-flex flex-column gap-4">
             <div class="d-flex flex-column gap-2">
+              <div class="alert alert-danger d-none" id="signinErr" role="alert"></div>
               <form id="signinForm">
                 {% csrf_token %}
                 <div class="d-flex flex-column gap-2">
@@ -59,6 +60,7 @@
                       placeholder="إسم المستخدم"
                     />
                     <label for="usernameInputSignin">إسم المستخدم</label>
+                    <span id="usernameInputSigninErr" class="small text-danger"></span>
                   </div>
                   <div class="form-floating">
                     <input
@@ -68,6 +70,7 @@
                       placeholder="كلمة السر"
                     />
                     <label for="passwordInputSignin">كلمة السر</label>
+                    <span id="passwordInputSigninErr" class="small text-danger"></span>
                   </div>
                 </div>
               </form>

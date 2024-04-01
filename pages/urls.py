@@ -36,4 +36,5 @@ urlpatterns = [
          name='choose_correct_bank'),
     path('set_service/', views.set_service, name='set_service'),
     path('category/new_services/', views.new_services, name='new_services'),
+    path('terms_of_use', views.terms_of_use, name='terms_of_use'),
 ]

@@ -33,7 +33,7 @@
         class="main-btn btn-one"
         {% if not user.is_authenticated %}
         data-bs-toggle="modal"
-        data-bs-target="#joinBasicModal"
+        data-bs-target="#joinVIPModal"
         {% else %}
         href="/category/become_VIP"
         {% endif %}
@@ -194,6 +194,7 @@
       <h1 class="text-center mt-5 display-3 fw-bold">خدماتنا</h1>
       <hr class="mx-auto mb-5 w-25" />
       <div class="row mb-5">
+        {% if request.user.userprofile.type == "p" or not request.user.userprofile %}
         <a
           href="{% url 'financial_consulting' %}"
           class="col-12 col-sm-6 col-md-4 col-xl-3"
@@ -237,6 +238,29 @@
           </div>
         </a>
         <a
+          href="{% url 'choose_bank' %}"
+          class="col-12 col-sm-6 col-md-4 col-xl-3"
+        >
+          <div
+            class="w-100 my-3 px-2 py-4 text-light d-flex flex-column gap-2 align-items-center rounded-3 position-relative overflow-hidden serviceVIP-card"
+          >
+            <img
+              src="{% static 'pictures/images/choosing.png' %}"
+              alt="choosing"
+              class="card-img-top m-0"
+            />
+            <h3 class="text-center m-0">اختيار بنك مناسب</h3>
+            <hr class="mx-auto my-0 w-75" />
+            <p class="small text-center w-75">
+              دع منصة Banking Hub المالية توجهك إلى البنك الذي يلبي توقعاتك
+              ويوفر لك الخدمات المناسبة لتحقيق أهدافك المالية بكل سهولة ويسر
+              بناءا على خبرة خبرائنا الماليين
+            </p>
+          </div>
+        </a>
+        {% endif %}
+        {% if request.user.userprofile.type == "b" or not request.user.userprofile %}
+        <a
           href="{% url 'promotion' %}"
           class="col-12 col-sm-6 col-md-4 col-xl-3"
         >
@@ -257,27 +281,7 @@
             </p>
           </div>
         </a>
-        <a
-          href="{% url 'choose_bank' %}"
-          class="col-12 col-sm-6 col-md-4 col-xl-3"
-        >
-          <div
-            class="w-100 my-3 px-2 py-4 text-light d-flex flex-column gap-2 align-items-center rounded-3 position-relative overflow-hidden serviceVIP-card"
-          >
-            <img
-              src="{% static 'pictures/images/choosing.png' %}"
-              alt="choosing"
-              class="card-img-top m-0"
-            />
-            <h3 class="text-center m-0">اختيار بنك مناسب</h3>
-            <hr class="mx-auto my-0 w-75" />
-            <p class="small text-center w-75">
-              المالية. دع منصة Banking Hub توجهك إلى البنك الذي يلبي توقعاتك
-              ويوفر لك الخدمات المناسبة لتحقيق أهدافك المالية بكل سهولة ويسر
-              بناءا على خبرة خبرائنا الماليين
-            </p>
-          </div>
-        </a>
+        {% endif %}
       </div>
     </div>
   </section>
@@ -431,103 +435,7 @@
     </div>
   </section>
 </section>
-{% endblock %} {% block modals %} {% comment %}
-<div
-  class="modal fade"
-  id="joinVIPModal"
-  tabindex="-1"
-  aria-labelledby="joinVIPModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">إنشاء حساب VIP</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body d-flex flex-column gap-4">
-        <div class="d-flex flex-column gap-2">
-          <form id="joinVIPForm">
-            <div class="d-flex flex-column gap-2">
-              <div class="d-flex gap-2">
-                <div class="form-floating w-50">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstNameInput"
-                    placeholder="الإسم"
-                  />
-                  <label for="firstNameInput">الإسم</label>
-                </div>
-                <div class="form-floating w-50">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastNameInput"
-                    placeholder="اللقب"
-                  />
-                  <label for="lastNameInput">اللقب</label>
-                </div>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="usernameInput"
-                  placeholder="إسم المستخدم"
-                />
-                <label for="usernameInput">إسم المستخدم</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailInput"
-                  placeholder="البريد الإلكتروني"
-                />
-                <label for="emailInput">البريد الإلكتروني</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="phoneInput"
-                  placeholder="رقم الهاتف"
-                />
-                <label for="phoneInput">رقم الهاتف</label>
-              </div>
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="addressInput"
-                  placeholder="العنوان"
-                />
-                <label for="addressInput">العنوان</label>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-secondary w-25"
-          data-bs-dismiss="modal"
-        >
-          إلغاء
-        </button>
-        <button type="button" class="btn btn-primary w-50">إنشاء حساب</button>
-      </div>
-    </div>
-  </div>
-</div>
-{% endcomment %}
+{% endblock %} {% block modals %}
 <div
   class="modal fade"
   id="joinBasicModal"
@@ -548,6 +456,7 @@
       </div>
       <div class="modal-body d-flex flex-column gap-4">
         <div class="d-flex flex-column gap-2">
+          <div class="alert alert-danger d-none" id="signupErrBasic" role="alert"></div>
           <form id="joinBasicForm">
             {% csrf_token %}
             <div class="d-flex flex-column gap-2">
@@ -629,6 +538,114 @@
           إلغاء
         </button>
         <button id="registerfreebtn" type="button" class="btn btn-primary w-50">
+          إنشاء حساب
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="joinVIPModal"
+  tabindex="-1"
+  aria-labelledby="joinVIPModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">إنشاء حساب</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body d-flex flex-column gap-4">
+        <div class="d-flex flex-column gap-2">
+          <div class="alert alert-danger d-none" id="signupErrVIP" role="alert"></div>
+          <form id="joinVIPForm">
+            {% csrf_token %}
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div class="form-floating w-50">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstNameInputVIP"
+                    placeholder="الإسم"
+                  />
+                  <label for="firstNameInputVIP">الإسم</label>
+                </div>
+                <div class="form-floating w-50">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastNameInputVIP"
+                    placeholder="اللقب"
+                  />
+                  <label for="lastNameInputVIP">اللقب</label>
+                </div>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usernameInputVIP"
+                  placeholder="إسم المستخدم"
+                />
+                <label for="usernameInputVIP">إسم المستخدم</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInputVIP"
+                  placeholder="البريد الإلكتروني"
+                />
+                <label for="emailInputVIP">البريد الإلكتروني</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="passwordInputVIP"
+                  placeholder="كلمة السر"
+                />
+                <label for="passwordInputVIP">كلمة السر</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneInputVIP"
+                  placeholder="رقم الهاتف"
+                />
+                <label for="phoneInputVIP">رقم الهاتف</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addressInputVIP"
+                  placeholder="العنوان"
+                />
+                <label for="addressInputVIP">العنوان</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary w-25"
+          data-bs-dismiss="modal"
+        >
+          إلغاء
+        </button>
+        <button id="registervipbtn" type="button" class="btn btn-primary w-50">
           إنشاء حساب
         </button>
       </div>

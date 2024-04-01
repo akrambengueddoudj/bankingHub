@@ -1,15 +1,15 @@
-function signup() {
+function signup(type) {
   $.ajax({
     url: "/accounts/signup/",
     type: "POST",
     data: {
-      fname: $("#firstNameInputBasic").val(),
-      lname: $("#lastNameInputBasic").val(),
-      username: $("#usernameInputBasic").val(),
-      password: $("#passwordInputBasic").val(),
-      email: $("#emailInputBasic").val(),
-      phone: $("#phoneInputBasic").val(),
-      address: $("#addressInputBasic").val(),
+      fname: $(`#firstNameInput${type}`).val(),
+      lname: $(`#lastNameInput${type}`).val(),
+      username: $(`#usernameInput${type}`).val(),
+      password: $(`#passwordInput${type}`).val(),
+      email: $(`#emailInput${type}`).val(),
+      phone: $(`#phoneInput${type}`).val(),
+      address: $(`#addressInput${type}`).val(),
       registerfreebtn: true,
     },
     headers: {
@@ -18,11 +18,22 @@ function signup() {
     success: function (data) {
       console.log(data);
       if (data.code == 3) {
-        window.location.href = "/";
+        if (type == "Basic") {
+          window.location.href = "/";
+        } else {
+          window.location.href = "/category/become_VIP";
+        }
       }
     },
     error: function (data) {
       console.error(data);
+      $(`#signupErr${type}`).removeClass("d-none")
+      if (data.responseJSON) {
+        $(`#signupErr${type}`).text(data.responseJSON.message)
+      } else {
+        $(`#signupErr${type}`).text("خطأ غير معروف، الرجاء الواصل مع مالك الموقع")
+      }
+      
     },
   });
 }
@@ -46,6 +57,8 @@ function signin() {
     },
     error: function (data) {
       console.error(data);
+      $("#signinErr").removeClass("d-none")
+      $("#signinErr").text(data.responseJSON.message);
     },
   });
 }
@@ -222,10 +235,23 @@ function sendMessage() {
 }
 $(document).ready(function () {
   $("#registerfreebtn").on("click", function (e) {
-    signup();
+    signup("Basic");
+  });
+  $("#registervipbtn").on("click", function (e) {
+    signup("VIP");
   });
   $("#signinbtn").on("click", function (e) {
-    signin();
+    if ($("#usernameInputSignin").val() == "") {
+      $("#usernameInputSigninErr").text("هذا الحقل إجباري")
+      $("#passwordInputSigninErr").text("")
+    } else if ($("#passwordInputSignin").val() == "") {
+      $("#usernameInputSigninErr").text("")
+      $("#passwordInputSigninErr").text("هذا الحقل إجباري")
+    } else {
+      $("#usernameInputSigninErr").text("")
+      $("#passwordInputSigninErr").text("")
+      signin();
+    }
   });
   $("#confirmPayment").on("click", function (e) {
     // check if the input #recipeInput has one image
