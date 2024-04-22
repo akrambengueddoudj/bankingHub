@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class FinancialConsulting(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     description = models.TextField(null=True, blank=True)
     is_responded = models.BooleanField(default=False)
     response = models.TextField(null=True, blank=True)

@@ -32,12 +32,29 @@
       >
         إرسال الاستشارة
       </button>
+      <div class="d-flex flex-column gap-2">
+        {% for consulting in consultings %}
+        <div class="d-flex flex-column gap-2 mt-4">
+          <h3 class="h3 m-0 fw-bold ps-4">الإستشارة:</h3>
+          {{ consulting.description }}
+          <h3 class="h3 m-0 fw-bold ps-4">الرد:</h3>
+          {% if consulting.is_responded %}
+          {{ consulting.response }}
+          {% else %}
+          <p class="text-muted">لم يتم الرد بعد</p>
+          {% endif %}
+        </div>
+        <hr />
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
 {% endblock %} {% block modals %}
 <div
   class="modal fade"
+  data-bs-backdrop="static" 
+  data-bs-keyboard="false"
   id="sendConsultingModal"
   tabindex="-1"
   aria-labelledby="sendConsultingModalLabel"
@@ -56,6 +73,7 @@
           type="button"
           class="btn btn-primary w-50"
           data-bs-dismiss="modal"
+          onClick="window.location.reload();"
         >
           موافق
         </button>

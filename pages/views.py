@@ -78,7 +78,9 @@ def general_info(request):
 def financial_consulting(request):
     if request.user.is_authenticated:
         if request.user.userprofile.type == "p":
-            return render(request, 'pages/financial_consulting.html')
+            consnultings = models.FinancialConsulting.objects.filter(
+                user=request.user).order_by('-id')
+            return render(request, 'pages/financial_consulting.html', {'consultings': consnultings})
     return redirect('home')
 
 
